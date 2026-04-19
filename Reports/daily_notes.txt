@@ -1,0 +1,8 @@
+# Daily Notes and Agent Communications
+
+This file serves as a continuous log for storing all data, comments, thoughts, terminal outputs, and collaborative notes between the user and agents. Information documented here will ultimately be used to formulate the final thesis report.
+
+---
+[2026-04-19] - Initial Setup
+- Created master experiment plan.
+- Structured Data directory into raw, processed, and models.
