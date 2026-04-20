@@ -6,3 +6,8 @@ This file serves as a continuous log for storing all data, comments, thoughts, t
 [2026-04-19] - Initial Setup
 - Created master experiment plan.
 - Structured Data directory into raw, processed, and models.
+
+---
+[2026-04-20] - Data Analysis & Next Steps
+- Analyzed available datasets: GMDCSA-24, UP-Fall (Sensor Data), OOPS-Fall, and Kinetics-400 (5%) are present. UP-Fall (Video Data) is missing, and NTU RGB+D access is pending.
+- **Decision on Next Steps**: We will start with the **Stream A (RGB Stream)** pretraining pipeline. Since the Kinetics-400 subset is available, we can set up the data loader (16-frame sequences at 224x224) and the basic ViT Masked Video Reconstruction architecture first. We can also begin scripting the Skeleton extraction pipeline for Stream B using OOPS-Fall/GMDCSA-24 videos for testing while waiting for NTU RGB+D.
