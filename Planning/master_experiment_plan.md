@@ -36,11 +36,10 @@ The `Data/` folder has been structured to separate raw data from processed datas
 | :--- | :--- | :--- | :--- |
 | **GMDCSA-24** | `Data/raw/GMDCSA24-A-Dataset-for-Human-Fall-Detection-in-Videos-master/` | Subfolders for each `Subject` (1-4), split into `Fall/` and `ADL/` containing `.csv` files. | ✅ Present |
 | **UP-Fall (Sensor Data)** | `Data/raw/CompleteDataSet.csv` | 47-column CSV (294k rows). Use `pandas.read_csv(path, low_memory=False)`. Contains Accelerometer, Angular Velocity, Luminosity, IR, BrainSensor, Subject, Activity, Tag. | ✅ Present (Sensors only) |
-| **Unknown Images** | `Data/raw/drive-download-20260321T083724Z-3-001/` | ~170 high-res `.JPG` files (e.g., `_DSC1524.JPG`). Read via `PIL` or `cv2`. Need to confirm their purpose. | ❓ Unknown |
-| **UP-Fall (Video Data)** | *Missing* | Multi-camera RGB video clips for Streams A & B. | ❌ Missing |
-| **Kinetics-400** | *Missing* | Large-scale action recognition video dataset for ViT pretraining. | ❌ Missing |
-| **NTU RGB+D (120)** | *Missing* | Large-scale skeleton dataset for STH-MAE pretraining. | ❌ Missing |
-| **OOPS-Fall** | *Missing* | Unpredictable "wild" real-world accident videos. | ❌ Missing |
+| **UP-Fall (Video Data)** | *Missing* | Multi-camera RGB video clips for Streams A & B. | ❌ Missing (Could not find images/videos) |
+| **Kinetics-400** | `Data/raw/kinetics400_5per/` | Video dataset for ViT pretraining. Structure: `train/` directory containing subfolders for each action class. | ✅ Present (5% subset) |
+| **NTU RGB+D (120)** | *Missing* | Large-scale skeleton dataset for STH-MAE pretraining. | ⏳ Requested Access |
+| **OOPS-Fall** | `Data/raw/oops_dataset/` | Unpredictable "wild" real-world accident videos. Structure: `video/oops_video/` contains clips, `annotations/` contains json/txt labels and splits. | ✅ Present |
 
 ---
 

@@ -1,25 +1,38 @@
 Exploring Data/raw/...
 
-- [DIR] drive-download-20260321T083724Z-3-001/
-  - [FILE] _DSC1524.JPG (11.41 MB)
-  - [FILE] _DSC1529.JPG (11.58 MB)
-  - [FILE] _DSC1406.JPG (9.40 MB)
-  - [FILE] _DSC1516.JPG (10.40 MB)
-  - [FILE] _DSC1486.JPG (13.18 MB)
-  - [FILE] _DSC1419(1).JPG (10.41 MB)
-  - [FILE] _DSC1446(1).JPG (11.93 MB)
-  - [FILE] _DSC1505.JPG (10.30 MB)
-  - [FILE] _DSC1424.JPG (8.49 MB)
-  - [FILE] _DSC1421(1).JPG (8.44 MB)
-  - [FILE] _DSC1498.JPG (9.72 MB)
-  - [FILE] _DSC1431(1).JPG (10.36 MB)
-  - [FILE] _DSC1522.JPG (11.47 MB)
-  - [FILE] _DSC1473.JPG (7.32 MB)
-  - [FILE] _DSC1517.JPG (10.57 MB)
-  - ... and 156 more items.
 - [FILE] CompleteDataSet.csv (78.43 MB)
   -> CSV Columns: ['TimeStamps', 'AnkleAccelerometer', 'Unnamed: 2', 'Unnamed: 3', 'AnkleAngularVelocity', 'Unnamed: 5', 'Unnamed: 6', 'AnkleLuminosity', 'RightPocketAccelerometer', 'Unnamed: 9', 'Unnamed: 10', 'RightPocketAngularVelocity', 'Unnamed: 12', 'Unnamed: 13', 'RightPocketLuminosity', 'BeltAccelerometer', 'Unnamed: 16', 'Unnamed: 17', 'BeltAngularVelocity', 'Unnamed: 19', 'Unnamed: 20', 'BeltLuminosity', 'NeckAccelerometer', 'Unnamed: 23', 'Unnamed: 24', 'NeckAngularVelocity', 'Unnamed: 26', 'Unnamed: 27', 'NeckLuminosity', 'WristAccelerometer', 'Unnamed: 30', 'Unnamed: 31', 'WristAngularVelocity', 'Unnamed: 33', 'Unnamed: 34', 'WristLuminosity', 'BrainSensor', 'Infrared1', 'Infrared2', 'Infrared3', 'Infrared4', 'Infrared5', 'Infrared6', 'Subject', 'Activity', 'Trial', 'Tag']
   -> CSV Shape: (294679, 47)
+- [DIR] kinetics400_5per/
+  - [DIR] train/
+    - [DIR] running on treadmill/
+    - [DIR] making jewelry/
+    - [DIR] arranging flowers/
+    - [DIR] spraying/
+    - [DIR] reading newspaper/
+    - [DIR] whistling/
+    - [DIR] catching or throwing softball/
+    - [DIR] chopping wood/
+    - [DIR] bouncing on trampoline/
+    - [DIR] ice fishing/
+    - [DIR] breakdancing/
+    - [DIR] bowling/
+    - [DIR] archery/
+    - [DIR] sailing/
+    - [DIR] shot put/
+    - ... and 385 more items.
+- [DIR] oops_dataset/
+  - [DIR] annotations/
+    - [FILE] train_filtered.txt (0.92 MB)
+    - [FILE] heldout_transition_times.json (0.57 MB)
+    - [FILE] filtered_vids.txt (1.19 MB)
+    - [FILE] val.txt (0.38 MB)
+    - [FILE] train.txt (1.34 MB)
+    - [FILE] transition_times.json (2.67 MB)
+    - [FILE] val_filtered.txt (0.27 MB)
+  - [DIR] video/
+    - [DIR] oops_video/
+  - [FILE] README.md (0.00 MB)
 - [DIR] GMDCSA24-A-Dataset-for-Human-Fall-Detection-in-Videos-master/
   - [DIR] Subject 1/
     - [FILE] Fall.csv (0.00 MB)
