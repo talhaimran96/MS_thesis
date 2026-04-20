@@ -45,21 +45,26 @@ class KineticsDataset(Dataset):
         return indices
         
     def __getitem__(self, idx):
-        vid_path, label = self.samples[idx]
-        vr = VideoReader(vid_path, ctx=cpu(0))
-        total_frames = len(vr)
-        
-        indices = self._get_frame_indices(total_frames)
-        frames = vr.get_batch(indices) # Shape: (T, H, W, C)
-        
-        # Convert to float and [0, 1] range
-        frames = frames.float() / 255.0
-        
-        # Transform expects (C, T, H, W) or we apply transform per frame
-        # Let's reshape to (T, C, H, W) for torchvision transforms
-        frames = frames.permute(0, 3, 1, 2)
-        
-        if self.transform:
-            frames = self.transform(frames)
-            
-        return frames, label
+        while True:
+            try:
+                vid_path, label = self.samples[idx]
+                vr = VideoReader(vid_path, ctx=cpu(0))
+                total_frames = len(vr)
+                
+                indices = self._get_frame_indices(total_frames)
+                frames = vr.get_batch(indices) # Shape: (T, H, W, C)
+                
+                # Convert to float and [0, 1] range
+                frames = frames.float() / 255.0
+                
+                # Transform expects (C, T, H, W) or we apply transform per frame
+                # Let's reshape to (T, C, H, W) for torchvision transforms
+                frames = frames.permute(0, 3, 1, 2)
+                
+                if self.transform:
+                    frames = self.transform(frames)
+                    
+                return frames, label
+            except Exception as e:
+                # If decord fails to read the video, randomly sample another video
+                idx = random.randint(0, len(self.samples) - 1)
