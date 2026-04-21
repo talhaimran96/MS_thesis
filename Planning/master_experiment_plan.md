@@ -14,6 +14,7 @@ This document serves as the master reference for all experiments related to the 
 7. **Documentation Maintenance**: The agent must continuously update the project `README.md` with any new setup instructions, newly established branches, or major updates to the experiments.
 8. **Experiment Tracking**: Use the `ExperimentLogger` (`src/utils/logger.py`) for all training scripts. It automatically saves hyperparams, training/validation metrics, and loss graphs to the `Results/{branch_name}_{model_type}/` folder.
 9. **Model Saving Conventions**: All models should be saved in `Data/models/{branch_name}/`. Always save the best performing model based on validation loss as `{model_type}_best.pth` and the final epoch model as `{model_type}_last.pth`.
+10. **Resumable Training**: All training scripts must be written to be resumable from a checkpoint. Include an `argparse` flag like `--resume` that loads the model's weights, the optimizer's state, and the starting epoch from the saved `.pth` file, minimizing data loss if a run is interrupted.
 
 ## Data to Record
 For every experiment, ensure the following metrics and configurations are explicitly documented in the respective daily report:

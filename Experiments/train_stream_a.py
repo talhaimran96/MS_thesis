@@ -2,6 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import argparse
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
@@ -29,6 +30,10 @@ def compute_loss(pred, target, mask, patch_size=16, tube_size=2):
     return loss
 
 def main():
+    parser = argparse.ArgumentParser(description="Train Stream A VideoMAE")
+    parser.add_argument('--resume', type=str, default=None, help='Path to checkpoint to resume from (e.g., Data/models/stream_a_rgb_baseline/videomae_v2_last.pth)')
+    args = parser.parse_args()
+
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
     
@@ -46,7 +51,8 @@ def main():
     
     logger = ExperimentLogger(branch_name="stream_a_rgb_baseline", 
                               model_type="videomae_v2", 
-                              hyperparams=hyperparams)
+                              hyperparams=hyperparams,
+                              resume=(args.resume is not None))
     
     # Data
     data_dir = 'Data/raw/kinetics400_5per/train/'
@@ -74,10 +80,26 @@ def main():
     
     optimizer = torch.optim.AdamW(model.parameters(), lr=hyperparams['lr'])
     
+    start_epoch = 0
     best_val_loss = float('inf')
+
+    if args.resume and os.path.isfile(args.resume):
+        print(f"Loading checkpoint '{args.resume}'...")
+        checkpoint = torch.load(args.resume, map_location=device)
+        if isinstance(checkpoint, dict) and 'model_state_dict' in checkpoint:
+            model.load_state_dict(checkpoint['model_state_dict'])
+            optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+            start_epoch = checkpoint['epoch']
+            best_val_loss = checkpoint.get('best_val_loss', float('inf'))
+            print(f"Loaded checkpoint '{args.resume}' (epoch {start_epoch})")
+        else:
+            model.load_state_dict(checkpoint)
+            start_epoch = len(logger.val_losses)
+            best_val_loss = min(logger.val_losses) if logger.val_losses else float('inf')
+            print(f"Loaded old-format model weights from '{args.resume}'. Inferred start_epoch={start_epoch}")
     
     print("Starting Training...")
-    for epoch in range(hyperparams['epochs']):
+    for epoch in range(start_epoch, hyperparams['epochs']):
         # Train Loop
         model.train()
         train_loss = 0.0
@@ -127,11 +149,21 @@ def main():
         # Save Best Model
         if avg_val_loss < best_val_loss:
             best_val_loss = avg_val_loss
-            torch.save(model.state_dict(), logger.get_best_model_path())
+            torch.save({
+                'epoch': epoch + 1,
+                'model_state_dict': model.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'best_val_loss': best_val_loss
+            }, logger.get_best_model_path())
             print(f"--> Saved new best model with Val Loss: {best_val_loss:.4f}")
             
     # Save Last Model
-    torch.save(model.state_dict(), logger.get_last_model_path())
+    torch.save({
+        'epoch': epoch + 1,
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+        'best_val_loss': best_val_loss
+    }, logger.get_last_model_path())
     print("Training loop complete. Models and logs saved.")
 
 if __name__ == '__main__':

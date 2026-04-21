@@ -3,7 +3,7 @@ import json
 import matplotlib.pyplot as plt
 
 class ExperimentLogger:
-    def __init__(self, branch_name, model_type, hyperparams):
+    def __init__(self, branch_name, model_type, hyperparams, resume=False):
         self.branch_name = branch_name
         self.model_type = model_type
         
@@ -20,6 +20,17 @@ class ExperimentLogger:
             
         self.train_losses = []
         self.val_losses = []
+        
+        if resume:
+            results_file = os.path.join(self.results_dir, 'results.json')
+            if os.path.exists(results_file):
+                try:
+                    with open(results_file, 'r') as f:
+                        data = json.load(f)
+                        self.train_losses = data.get('train_losses', [])
+                        self.val_losses = data.get('val_losses', [])
+                except Exception:
+                    pass
         
     def log_epoch(self, epoch, train_loss, val_loss):
         self.train_losses.append(train_loss)
