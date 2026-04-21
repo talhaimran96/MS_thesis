@@ -11,3 +11,13 @@ This file serves as a continuous log for storing all data, comments, thoughts, t
 [2026-04-20] - Data Analysis & Next Steps
 - Analyzed available datasets: GMDCSA-24, UP-Fall (Sensor Data), OOPS-Fall, and Kinetics-400 (5%) are present. UP-Fall (Video Data) is missing, and NTU RGB+D access is pending.
 - **Decision on Next Steps**: We will start with the **Stream A (RGB Stream)** pretraining pipeline. Since the Kinetics-400 subset is available, we can set up the data loader (16-frame sequences at 224x224) and the basic ViT Masked Video Reconstruction architecture first. We can also begin scripting the Skeleton extraction pipeline for Stream B using OOPS-Fall/GMDCSA-24 videos for testing while waiting for NTU RGB+D.
+
+---
+[2026-04-22] - Stream A RGB Baseline Pretraining Results
+- Executed the pretraining pipeline for **Stream A (RGB Stream)** on the `stream_a_rgb_baseline` branch using the VideoMAE V2 architecture on the Kinetics-400 (5%) subset.
+- Training successfully completed for 50 epochs.
+- **Results**: 
+  - The model achieved a best validation loss of **`0.0248`** at **Epoch 49**.
+  - Final training loss was **`0.0261`** at Epoch 50.
+- Checkpoints, loss graphs, and metrics have been logged to `Results/stream_a_rgb_baseline_videomae_v2/`.
+- **Next Steps**: Begin testing the learned representations against traditional supervised baselines (Experiment A) or proceed with setting up Stream B if NTU RGB+D access is granted.
