@@ -41,7 +41,7 @@ The `Data/` folder has been structured to separate raw data from processed datas
 | **UP-Fall (Sensor Data)** | `Data/raw/CompleteDataSet.csv` | 47-column CSV (294k rows). Use `pandas.read_csv(path, low_memory=False)`. Contains Accelerometer, Angular Velocity, Luminosity, IR, BrainSensor, Subject, Activity, Tag. | ✅ Present (Sensors only) |
 | **UP-Fall (Video Data)** | *Missing* | Multi-camera RGB video clips for Streams A & B. | ❌ Missing (Could not find images/videos) |
 | **Kinetics-400** | `Data/raw/kinetics400_5per/` | Video dataset for ViT pretraining. Structure: `train/` directory containing subfolders for each action class. | ✅ Present (5% subset) |
-| **NTU RGB+D (120)** | *Missing* | Large-scale skeleton dataset for STH-MAE pretraining. | ⏳ Requested Access |
+| **NTU RGB+D (120)** | `Data/raw/nturgbd_skeletons_s001_to_s017/` | Large-scale skeleton dataset for STH-MAE pretraining. | ✅ Present |
 | **OOPS-Fall** | `Data/raw/oops_dataset/` | Unpredictable "wild" real-world accident videos. Structure: `video/oops_video/` contains clips, `annotations/` contains json/txt labels and splits. | ✅ Present |
 
 ---

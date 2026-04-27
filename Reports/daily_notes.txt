@@ -21,3 +21,10 @@ This file serves as a continuous log for storing all data, comments, thoughts, t
   - Final training loss was **`0.0261`** at Epoch 50.
 - Checkpoints, loss graphs, and metrics have been logged to `Results/stream_a_rgb_baseline_videomae_v2/`.
 - **Next Steps**: Begin testing the learned representations against traditional supervised baselines (Experiment A) or proceed with setting up Stream B if NTU RGB+D access is granted.
+
+---
+[2026-04-27] - Stream A Classifier Training Initiated
+- Master experiment plan was updated to reflect that the NTU RGB+D (120) dataset is now present and accessible.
+- Created `Experiments/train_stream_a_classifier.py` to train a classifier on top of the pre-trained VideoMAE backbone. The script automatically loads `videomae_v2_best.pth`.
+- Script updated to train for 100 epochs, with robust resume capabilities (protecting logger array integrity) to handle power cuts.
+- User increased the batch size to 16 and successfully initiated the fine-tuning classification training run using the placeholder Kinetics dataset.

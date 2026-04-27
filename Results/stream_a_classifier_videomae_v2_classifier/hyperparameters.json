@@ -1,0 +1,11 @@
+{
+    "batch_size": 16,
+    "epochs": 100,
+    "lr": 0.0005,
+    "depth": 4,
+    "num_heads": 6,
+    "patch_size": 16,
+    "tube_size": 2,
+    "num_classes": 400,
+    "freeze_backbone": false
+}
