@@ -1,12 +1,12 @@
 {
     "batch_size": 16,
-    "epochs": 100,
+    "epochs": 30,
     "lr": 0.0005,
     "depth": 4,
     "num_heads": 6,
     "patch_size": 16,
     "tube_size": 2,
-    "num_classes": 400,
+    "num_classes": 2,
     "freeze_backbone": false,
     "lstm_hidden_size": 256,
     "lstm_num_layers": 2

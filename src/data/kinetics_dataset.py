@@ -9,21 +9,33 @@ from decord import VideoReader, cpu
 decord.bridge.set_bridge("torch")
 
 class KineticsDataset(Dataset):
-    def __init__(self, data_dir, num_frames=16, frame_stride=4, transform=None):
+    def __init__(self, data_dir, num_frames=16, frame_stride=4, transform=None, binary_mode=False):
         self.data_dir = data_dir
         self.num_frames = num_frames
         self.frame_stride = frame_stride
         self.transform = transform
+        self.binary_mode = binary_mode
         
         self.classes = sorted([d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, d))])
         self.class_to_idx = {cls_name: i for i, cls_name in enumerate(self.classes)}
         
+        
+        # Pseudo fall classes for testing binary classification
+        pseudo_falls = {'faceplanting', 'diving cliff', 'bungee jumping', 'springboard diving', 'somersaulting', 'parkour'}
+        
         self.samples = []
         for cls_name in self.classes:
             cls_dir = os.path.join(data_dir, cls_name)
+            
+            # If binary_mode, label is 1 for pseudo falls, 0 for everything else
+            if self.binary_mode:
+                label = 1 if cls_name in pseudo_falls else 0
+            else:
+                label = self.class_to_idx[cls_name]
+                
             for vid_name in os.listdir(cls_dir):
                 if vid_name.endswith('.mp4') or vid_name.endswith('.avi'):
-                    self.samples.append((os.path.join(cls_dir, vid_name), self.class_to_idx[cls_name]))
+                    self.samples.append((os.path.join(cls_dir, vid_name), label))
                     
     def __len__(self):
         return len(self.samples)

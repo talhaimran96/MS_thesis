@@ -17,8 +17,9 @@ from src.utils.logger import ExperimentLogger
 class VideoMAEClassifier(nn.Module):
     """
     Classification head attached to the pretrained VideoMAE backbone.
+    Incorporates Spatial Pooling and an LSTM to model temporal sequence dynamics.
     """
-    def __init__(self, backbone, num_classes=2, freeze_backbone=False):
+    def __init__(self, backbone, num_classes=2, freeze_backbone=False, lstm_hidden_size=256, lstm_num_layers=2):
         super().__init__()
         self.backbone = backbone
         
@@ -30,21 +31,48 @@ class VideoMAEClassifier(nn.Module):
         # The embed_dim is accessible via the norm layer's dimension
         embed_dim = self.backbone.norm.weight.shape[0]
         
-        # Simple linear classifier head on top of the CLS token
+        # LSTM layer to process the temporal sequence of spatially pooled tokens
+        self.lstm = nn.LSTM(
+            input_size=embed_dim,
+            hidden_size=lstm_hidden_size,
+            num_layers=lstm_num_layers,
+            batch_first=True,
+            dropout=0.5 if lstm_num_layers > 1 else 0
+        )
+        
+        # Linear classifier head on top of the LSTM's final hidden state
         self.head = nn.Sequential(
             nn.Dropout(0.5),
-            nn.Linear(embed_dim, num_classes)
+            nn.Linear(lstm_hidden_size, num_classes)
         )
 
     def forward(self, x):
+        # x is (B, C, T, H, W). E.g. (B, 3, 16, 224, 224)
         # Pass through the encoder with mask_ratio=0.0 to process all patches
         x_encoded, _, _ = self.backbone.forward_encoder(x, mask_ratio=0.0)
         
-        # Extract the CLS token (the first token in the sequence)
-        cls_token = x_encoded[:, 0]
+        # x_encoded is (B, 1 + num_patches, embed_dim)
+        # Get patch tokens (ignore CLS token at index 0)
+        patch_tokens = x_encoded[:, 1:, :] # (B, num_patches, embed_dim)
+        
+        # Reshape to (B, T_tokens, Spatial_tokens, embed_dim)
+        B, num_patches, embed_dim = patch_tokens.shape
+        T_tokens = self.backbone.num_frames_per_tube # typically 16 // 2 = 8
+        Spatial_tokens = self.backbone.num_spatial_patches # typically (224 // 16)^2 = 196
+        
+        patch_tokens = patch_tokens.view(B, T_tokens, Spatial_tokens, embed_dim)
+        
+        # Spatial Average Pooling (average over the spatial dimension)
+        spatial_pooled = patch_tokens.mean(dim=2) # (B, T_tokens, embed_dim)
+        
+        # Temporal Modeling via LSTM
+        lstm_out, (hn, cn) = self.lstm(spatial_pooled) # lstm_out: (B, T_tokens, lstm_hidden_size)
+        
+        # Take the output from the last time step
+        last_out = lstm_out[:, -1, :] # (B, lstm_hidden_size)
         
         # Classification prediction
-        out = self.head(cls_token)
+        out = self.head(last_out)
         return out
 
 
@@ -52,7 +80,9 @@ def main():
     parser = argparse.ArgumentParser(description="Train Stream A Classifier (Fine-Tuning)")
     parser.add_argument('--pretrained', type=str, default='Data/models/stream_a_rgb_baseline/videomae_v2_best.pth', help='Path to pretrained VideoMAE weights')
     parser.add_argument('--resume', type=str, default=None, help='Path to classification checkpoint to resume from')
-    parser.add_argument('--num_classes', type=int, default=400, help='Number of classification classes (e.g., 2 for Fall vs ADL, 400 for Kinetics)')
+    parser.add_argument('--num_classes', type=int, default=2, help='Number of classification classes (e.g., 2 for Fall vs ADL, 400 for Kinetics)')
+    parser.add_argument('--epochs', type=int, default=30, help='Number of epochs to train')
+    parser.add_argument('--batch_size', type=int, default=16, help='Batch size for training')
     parser.add_argument('--freeze_backbone', action='store_true', help='Freeze the VideoMAE backbone and only train the classification head')
     args = parser.parse_args()
 
@@ -61,19 +91,24 @@ def main():
     
     # Hyperparams
     hyperparams = {
-        'batch_size': 16,
-        'epochs': 100,
+        'batch_size': args.batch_size,
+        'epochs': args.epochs,
         'lr': 5e-4, # Smaller learning rate for fine-tuning
         'depth': 4,
         'num_heads': 6,
         'patch_size': 16,
         'tube_size': 2,
         'num_classes': args.num_classes,
-        'freeze_backbone': args.freeze_backbone
+        'freeze_backbone': args.freeze_backbone,
+        'lstm_hidden_size': 256,
+        'lstm_num_layers': 2
     }
     
+    is_pretrained = bool(args.pretrained and os.path.isfile(args.pretrained))
+    model_type = "videomae_v2_classifier_pretrained" if is_pretrained else "videomae_v2_classifier_scratch"
+    
     logger = ExperimentLogger(branch_name="stream_a_classifier", 
-                              model_type="videomae_v2_classifier", 
+                              model_type=model_type, 
                               hyperparams=hyperparams,
                               resume=(args.resume is not None))
     
@@ -86,8 +121,8 @@ def main():
         transforms.CenterCrop(224)
     ])
     
-    print("Loading Dataset...")
-    full_dataset = KineticsDataset(data_dir=data_dir, num_frames=16, frame_stride=4, transform=transform)
+    print("Loading Dataset (Binary Mode Fall vs ADL)...")
+    full_dataset = KineticsDataset(data_dir=data_dir, num_frames=16, frame_stride=4, transform=transform, binary_mode=True)
     
     # Split into 80/20 train/val
     train_size = int(0.8 * len(full_dataset))
@@ -117,11 +152,24 @@ def main():
     else:
         print("WARNING: No pretrained weights found. Training from scratch.")
 
-    model = VideoMAEClassifier(backbone, num_classes=hyperparams['num_classes'], freeze_backbone=hyperparams['freeze_backbone'])
+    model = VideoMAEClassifier(backbone, num_classes=hyperparams['num_classes'], freeze_backbone=hyperparams['freeze_backbone'],
+                               lstm_hidden_size=hyperparams['lstm_hidden_size'], lstm_num_layers=hyperparams['lstm_num_layers'])
     model.to(device)
     
     # Loss and Optimizer
-    criterion = nn.CrossEntropyLoss()
+    # Calculate class weights for binary classification imbalance
+    num_falls = sum(1 for _, label in train_dataset.dataset.samples if label == 1)
+    num_adl = len(train_dataset.dataset.samples) - num_falls
+    if num_falls > 0:
+        weight_0 = 1.0
+        weight_1 = num_adl / num_falls
+        class_weights = torch.tensor([weight_0, weight_1], dtype=torch.float32).to(device)
+    else:
+        class_weights = torch.tensor([1.0, 1.0], dtype=torch.float32).to(device)
+        
+    print(f"Class Weights: ADL={class_weights[0].item():.2f}, Fall={class_weights[1].item():.2f}")
+    criterion = nn.CrossEntropyLoss(weight=class_weights)
+    
     # We might want different learning rates for backbone vs head
     if hyperparams['freeze_backbone']:
         optimizer = torch.optim.AdamW(model.head.parameters(), lr=hyperparams['lr'])
