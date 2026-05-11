@@ -1,0 +1,194 @@
+Loading MediaPipe Video Dataset from Data/raw/kinetics400_5per/train/...
+Total videos to process: 10803
+Cache directory: Data/raw/kinetics400_5per/train/../mediapipe_cache
+Extracting MediaPipe Features:   0%|          | 0/10803 [00:00<?, ?it/s]libEGL warning: pci id for fd 18: 10de:1e81, driver (null)
+
+pci id for fd 21: 10de:1e81, driver (null)
+pci id for fd 22: 10de:1e81, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+pci id for fd 21: 10de:1e81, driver (null)
+pci id for fd 22: 10de:1e81, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1778479564.165406 2189328 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479564.179977 2189349 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1778479564.233931 2189332 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479564.255866 2189331 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479564.301816 2189334 landmark_projection_calculator.cc:78] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+Extracting MediaPipe Features:   0%|          | 11/10803 [00:05<1:32:00,  1.95it/s]I0000 00:00:1778479569.711350 2189412 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479569.720352 2189420 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479569.773551 2189414 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479569.795026 2189419 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 12/10803 [00:11<3:26:49,  1.15s/it]I0000 00:00:1778479575.780476 2189486 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479575.787122 2189494 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479575.839997 2189489 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479575.855819 2189491 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 13/10803 [00:17<5:31:29,  1.84s/it]I0000 00:00:1778479581.843646 2189558 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479581.850236 2189566 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479581.896015 2189562 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479581.917593 2189561 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 14/10803 [00:25<8:18:35,  2.77s/it]I0000 00:00:1778479589.234237 2189631 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479589.240821 2189639 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479589.294329 2189634 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479589.314173 2189638 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 15/10803 [00:32<11:03:54,  3.69s/it]I0000 00:00:1778479596.761714 2189711 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479596.770094 2189719 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479596.825470 2189713 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479596.836649 2189718 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 16/10803 [00:35<10:36:42,  3.54s/it]I0000 00:00:1778479599.754129 2189756 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479599.760990 2189764 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479599.815245 2189759 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479599.836645 2189762 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 17/10803 [00:40<11:11:04,  3.73s/it]I0000 00:00:1778479604.111415 2189808 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479604.117963 2189816 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479604.170866 2189811 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479604.191853 2189814 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 18/10803 [00:49<15:27:33,  5.16s/it]I0000 00:00:1778479613.505336 2189895 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479613.511858 2189903 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479613.556453 2189898 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479613.578071 2189898 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 19/10803 [01:01<21:20:30,  7.12s/it]I0000 00:00:1778479626.074364 2190012 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479626.080585 2190020 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479626.133554 2190015 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479626.153821 2190019 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 20/10803 [01:09<21:42:16,  7.25s/it]I0000 00:00:1778479633.644325 2190103 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479633.650787 2190111 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479633.702188 2190106 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479633.722776 2190105 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 21/10803 [01:14<19:30:50,  6.52s/it]I0000 00:00:1778479638.297306 2190183 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479638.304229 2190191 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479638.358261 2190186 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479638.379568 2190189 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 22/10803 [01:27<25:31:31,  8.52s/it]I0000 00:00:1778479651.807072 2190329 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479651.813293 2190337 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479651.865792 2190332 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479651.885948 2190331 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 23/10803 [01:35<25:12:33,  8.42s/it]I0000 00:00:1778479659.979726 2190410 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479659.986080 2190418 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479660.037345 2190413 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479660.056852 2190412 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 24/10803 [01:41<22:57:17,  7.67s/it]I0000 00:00:1778479665.828622 2190476 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479665.835019 2190484 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479665.887836 2190480 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479665.909258 2190480 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 25/10803 [01:46<20:16:56,  6.77s/it]I0000 00:00:1778479670.473129 2190528 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479670.480274 2190536 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479670.525018 2190531 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479670.548850 2190534 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 26/10803 [01:55<22:02:59,  7.37s/it]I0000 00:00:1778479679.243799 2190615 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479679.249988 2190623 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479679.293712 2190618 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479679.315593 2190617 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 27/10803 [01:59<19:44:49,  6.60s/it]I0000 00:00:1778479684.025585 2190674 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479684.032034 2190682 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479684.082990 2190677 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479684.104038 2190678 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 28/10803 [02:06<19:24:05,  6.48s/it]I0000 00:00:1778479690.246670 2190740 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479690.252848 2190748 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479690.302790 2190743 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479690.324323 2190744 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 29/10803 [02:16<22:27:24,  7.50s/it]I0000 00:00:1778479700.136056 2190834 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479700.142418 2190842 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479700.186106 2190838 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479700.205489 2190839 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 30/10803 [02:19<18:23:47,  6.15s/it]I0000 00:00:1778479703.108587 2190879 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479703.114994 2190887 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479703.166118 2190882 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479703.185950 2190881 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 31/10803 [02:24<17:54:24,  5.98s/it]I0000 00:00:1778479708.715120 2190945 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479708.721310 2190953 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479708.774463 2190949 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479708.797851 2190948 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 32/10803 [02:31<18:31:09,  6.19s/it]I0000 00:00:1778479715.381612 2191011 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479715.388090 2191019 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479715.441715 2191014 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479715.462254 2191018 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 33/10803 [02:38<19:48:50,  6.62s/it]I0000 00:00:1778479723.015183 2191091 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479723.021571 2191099 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479723.076091 2191094 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479723.096064 2191097 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 34/10803 [02:43<18:01:38,  6.03s/it]I0000 00:00:1778479727.647078 2191143 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479727.653396 2191151 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479727.699197 2191146 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479727.721448 2191150 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 35/10803 [02:51<19:40:45,  6.58s/it]I0000 00:00:1778479735.518339 2191223 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479735.524694 2191231 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479735.576989 2191226 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479735.597071 2191228 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 36/10803 [02:58<20:12:05,  6.75s/it]I0000 00:00:1778479742.690803 2191297 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479742.697431 2191311 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479742.748736 2191306 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479742.769946 2191305 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 37/10803 [03:04<19:40:04,  6.58s/it]I0000 00:00:1778479748.842259 2191369 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479748.849296 2191377 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479748.902330 2191372 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479748.924345 2191375 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 38/10803 [03:12<20:39:44,  6.91s/it]I0000 00:00:1778479756.531625 2191446 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479756.537926 2191454 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479756.581028 2191449 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479756.602358 2191448 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 39/10803 [03:17<19:08:03,  6.40s/it]I0000 00:00:1778479761.740631 2191512 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479761.746965 2191520 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479761.799197 2191515 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479761.820704 2191514 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 40/10803 [03:25<20:14:08,  6.77s/it]I0000 00:00:1778479769.371323 2191590 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479769.377683 2191598 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479769.421607 2191593 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479769.441435 2191594 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 41/10803 [03:39<26:44:23,  8.94s/it]I0000 00:00:1778479783.391437 2191727 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479783.397815 2191735 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479783.451263 2191730 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479783.461871 2191729 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 42/10803 [03:44<23:41:45,  7.93s/it]I0000 00:00:1778479788.945372 2191794 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479788.953372 2191802 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479789.005988 2191797 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479789.025564 2191800 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 43/10803 [03:48<20:11:14,  6.75s/it]I0000 00:00:1778479792.963024 2191846 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479792.969622 2191854 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479793.021781 2191849 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479793.040940 2191852 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 44/10803 [03:55<20:04:41,  6.72s/it]I0000 00:00:1778479799.601022 2191912 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479799.607335 2191920 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479799.660878 2191915 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479799.682716 2191918 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 45/10803 [04:05<23:11:51,  7.76s/it]I0000 00:00:1778479809.800326 2192023 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479809.806726 2192031 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479809.859934 2192028 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479809.880691 2192029 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 46/10803 [04:14<24:33:12,  8.22s/it]I0000 00:00:1778479819.072506 2192111 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479819.078893 2192119 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479819.132463 2192115 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479819.152046 2192116 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 47/10803 [04:24<25:35:00,  8.56s/it]I0000 00:00:1778479828.445403 2192198 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479828.451683 2192206 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479828.504925 2192201 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479828.526983 2192201 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 48/10803 [04:32<25:38:59,  8.59s/it]I0000 00:00:1778479837.083656 2192304 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479837.090767 2192312 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479837.144414 2192307 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479837.166533 2192309 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 49/10803 [04:40<24:51:39,  8.32s/it]I0000 00:00:1778479844.789734 2192377 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479844.796160 2192385 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479844.849832 2192380 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479844.871304 2192379 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 50/10803 [04:50<26:00:52,  8.71s/it]I0000 00:00:1778479854.406443 2192471 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479854.412751 2192479 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479854.464816 2192474 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479854.486131 2192478 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 51/10803 [04:59<26:15:19,  8.79s/it]I0000 00:00:1778479863.384275 2192558 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479863.392483 2192566 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479863.446622 2192563 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479863.468276 2192563 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 52/10803 [05:06<25:00:01,  8.37s/it]I0000 00:00:1778479870.775553 2192655 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479870.782026 2192663 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479870.835092 2192660 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479870.854730 2192658 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 53/10803 [05:11<21:39:00,  7.25s/it]I0000 00:00:1778479875.409486 2192714 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479875.415809 2192722 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479875.467743 2192717 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479875.489682 2192717 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracting MediaPipe Features:   0%|          | 54/10803 [05:13<17:31:30,  5.87s/it]I0000 00:00:1778479878.057417 2192755 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1778479878.063767 2192763 gl_context.cc:385] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.25.10.1), renderer: llvmpipe (LLVM 20.1.8, 256 bits)
+W0000 00:00:1778479878.115472 2192758 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1778479878.136971 2192759 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.

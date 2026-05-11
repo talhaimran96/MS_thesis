@@ -28,3 +28,20 @@ This file serves as a continuous log for storing all data, comments, thoughts, t
 - Created `Experiments/train_stream_a_classifier.py` to train a classifier on top of the pre-trained VideoMAE backbone. The script automatically loads `videomae_v2_best.pth`.
 - Script updated to train for 100 epochs, with robust resume capabilities (protecting logger array integrity) to handle power cuts.
 - User increased the batch size to 16 and successfully initiated the fine-tuning classification training run using the placeholder Kinetics dataset.
+
+---
+[2026-05-11] - Stream A Classifier Results & Velocity Stream Initialization
+- Analyzed the results from the Stream A VideoMAE V2 Classifier training runs on the placeholder dataset.
+- The results across the three variations were:
+  - **Pretrained (Fine-Tuned):** Best Validation Loss = `0.364` at Epoch 28
+  - **Scratch (Random Weights):** Best Validation Loss = `0.416` at Epoch 26
+  - **Pretrained (Frozen Backbone):** Best Validation Loss = `0.466` at Epoch 20
+- Fine-tuning the pretrained backbone yielded the best performance, validating the pretraining step.
+- Initializing a new experimental stream to evaluate velocity-based classification. This stream will compute velocity vectors from pose points and use them for classification.
+- Two approaches will be explored:
+  1. Operating directly on existing skeleton data.
+  2. Using MediaPipe to extract pose points from raw video data before computing velocity vectors.
+- **Update (Later that day)**:
+  - Added confusion matrix evaluation to both velocity training scripts to properly record the classification performance.
+  - Implemented class weighting in the `CrossEntropyLoss` function for both velocity streams to combat inherent dataset class imbalances.
+  - Created a standalone dataset preparation script (`prepare_mediapipe_dataset.py`) to pre-extract and cache MediaPipe features, drastically reducing training time per epoch.

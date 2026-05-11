@@ -72,6 +72,9 @@ The `Data/` folder has been structured to separate raw data from processed datas
 - **Proxy Tasks (Fine-Tuning)**: Integrate multi-task proxy learning to distinguish the "Arrow of Time" (forward vs. backward sequences) and "Motion Irregularity" (smooth vs. shuffled frames).
 - **Domain Generalization**: Train models on "staged" datasets (UP-Fall) and evaluate their ability to bridge the domain gap by testing on "wild" real-world sets (GMDCSA-24 and OOPS-Fall).
 
-### Experiment E: Reference Stream Baseline
-- **Proposed Architecture**: Reference stream utilizing MediaPipe or open-source object detection for pose estimation, followed by classification via GNNs, LSTMs, and traditional ML classifiers.
+### Experiment E: Reference Stream Baseline (Velocity-Based)
+- **Proposed Architecture**: Reference stream utilizing extracted 3D pose joints to compute inter-frame velocity sequences. Classification is performed using a multi-layer LSTM network.
+- **Data Pipelines**:
+  1. **Direct Skeleton**: Uses raw 3D joints from `NTU RGB+D` and computes velocity directly.
+  2. **MediaPipe on RGB**: Extracts `PoseLandmarker` features dynamically from raw video (e.g., `Kinetics-400` or `GMDCSA-24`) to compute 2D/3D velocity. MediaPipe features must be pre-extracted using the `prepare_mediapipe_dataset.py` script.
 - **Comparison Goal**: Establish a baseline for pose-based detection and compute downward/fall velocity against complex generative models.

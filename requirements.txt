@@ -8,3 +8,5 @@ einops
 tqdm
 pandas
 matplotlib
+mediapipe
+opencv-python

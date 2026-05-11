@@ -1,0 +1,14 @@
+=== Experiment B Fine-Tuning — Classification Report ===
+
+Model:       sth_mae_classifier
+Branch:      exp-b-skeleton-ssl
+Best Epoch:  6
+
+F1-Score:    0.9154
+Sensitivity: 0.9022
+Specificity: 0.9988
+Precision:   0.9289
+Accuracy:    0.9972
+FAR:         0.0012
+
+TP: 243  TN: 16230  FP: 34  FN: 26
