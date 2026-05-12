@@ -45,3 +45,6 @@ This file serves as a continuous log for storing all data, comments, thoughts, t
   - Added confusion matrix evaluation to both velocity training scripts to properly record the classification performance.
   - Implemented class weighting in the `CrossEntropyLoss` function for both velocity streams to combat inherent dataset class imbalances.
   - Created a standalone dataset preparation script (`prepare_mediapipe_dataset.py`) to pre-extract and cache MediaPipe features, drastically reducing training time per epoch.
+  - **Dataset Clarification**: Documented the differences between the two skeleton pipelines:
+    - `NTU RGB+D` Dataset: Pre-extracted 25 joints using Kinect v2 hardware in a controlled lab setting.
+    - `MediaPipe` Dataset: Dynamically extracted 33 landmarks from RGB "in-the-wild" videos (Kinetics-400), creating a much different topology and noise profile. They are *not* identical.

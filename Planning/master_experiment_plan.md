@@ -76,5 +76,5 @@ The `Data/` folder has been structured to separate raw data from processed datas
 - **Proposed Architecture**: Reference stream utilizing extracted 3D pose joints to compute inter-frame velocity sequences. Classification is performed using a multi-layer LSTM network.
 - **Data Pipelines**:
   1. **Direct Skeleton**: Uses raw 3D joints from `NTU RGB+D` and computes velocity directly.
-  2. **MediaPipe on RGB**: Extracts `PoseLandmarker` features dynamically from raw video (e.g., `Kinetics-400` or `GMDCSA-24`) to compute 2D/3D velocity. MediaPipe features must be pre-extracted using the `prepare_mediapipe_dataset.py` script.
+  2. **MediaPipe on RGB**: Extracts `PoseLandmarker` features dynamically from raw video (e.g., `Kinetics-400` or `GMDCSA-24`) to compute 2D/3D velocity. MediaPipe features must be pre-extracted using the `prepare_mediapipe_dataset.py` script. *(Note: MediaPipe extracts 33 landmarks from RGB videos, which is a different topology than the 25 joints from the NTU RGB+D sensor. The datasets are not identical).*
 - **Comparison Goal**: Establish a baseline for pose-based detection and compute downward/fall velocity against complex generative models.
