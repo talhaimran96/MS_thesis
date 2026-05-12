@@ -27,7 +27,7 @@ def main():
     hyperparams = {
         'batch_size': args.batch_size,
         'epochs': args.epochs,
-        'lr': 1e-3,
+        'lr': 1e-4,
         'seq_len': args.seq_len,
         'input_size': 99, # 33 joints * 3 dims (x,y,z)
         'hidden_size': 128,

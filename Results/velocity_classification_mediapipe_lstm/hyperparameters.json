@@ -1,7 +1,7 @@
 {
-    "batch_size": 16,
-    "epochs": 30,
-    "lr": 0.001,
+    "batch_size": 64,
+    "epochs": 100,
+    "lr": 0.0001,
     "seq_len": 60,
     "input_size": 99,
     "hidden_size": 128,
