@@ -1,72 +1,94 @@
 import os
 import json
+import logging
+from datetime import datetime
 import matplotlib.pyplot as plt
+import torch
 
 class ExperimentLogger:
-    def __init__(self, branch_name, model_type, hyperparams, resume=False):
-        self.branch_name = branch_name
-        self.model_type = model_type
+    def __init__(self, experiment_name: str, base_dir: str = "Results"):
+        self.experiment_name = experiment_name
+        self.timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        self.run_dir = os.path.join(base_dir, f"{self.experiment_name}_{self.timestamp}")
         
-        # Define directories
-        self.results_dir = os.path.join('Results', f"{branch_name}_{model_type}")
-        self.models_dir = os.path.join('Data', 'models', branch_name)
+        os.makedirs(self.run_dir, exist_ok=True)
+        os.makedirs(os.path.join("Data", "models", self.experiment_name), exist_ok=True)
         
-        os.makedirs(self.results_dir, exist_ok=True)
-        os.makedirs(self.models_dir, exist_ok=True)
+        self.log_file = os.path.join(self.run_dir, "training.log")
+        self.metrics_file = os.path.join(self.run_dir, "metrics.json")
         
-        # Save hyperparams
-        with open(os.path.join(self.results_dir, 'hyperparameters.json'), 'w') as f:
-            json.dump(hyperparams, f, indent=4)
-            
-        self.train_losses = []
-        self.val_losses = []
-        
-        if resume:
-            results_file = os.path.join(self.results_dir, 'results.json')
-            if os.path.exists(results_file):
-                try:
-                    with open(results_file, 'r') as f:
-                        data = json.load(f)
-                        self.train_losses = data.get('train_losses', [])
-                        self.val_losses = data.get('val_losses', [])
-                except Exception:
-                    pass
-        
-    def log_epoch(self, epoch, train_loss, val_loss):
-        self.train_losses.append(train_loss)
-        self.val_losses.append(val_loss)
-        
-        # Save intermediate results
-        self.save_results()
-        self.plot_losses()
-        
-    def save_results(self):
-        results = {
-            'train_losses': self.train_losses,
-            'val_losses': self.val_losses,
-            'best_val_loss': min(self.val_losses) if self.val_losses and self.val_losses[0] is not None else None,
-            'best_epoch': self.val_losses.index(min(self.val_losses)) + 1 if self.val_losses and self.val_losses[0] is not None else None
+        self.metrics = {
+            "train_loss": [],
+            "val_loss": [],
+            "val_acc": [],
+            "epochs": []
         }
-        with open(os.path.join(self.results_dir, 'results.json'), 'w') as f:
-            json.dump(results, f, indent=4)
+        
+        # Setup standard Python logging
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s [%(levelname)s] %(message)s",
+            handlers=[
+                logging.FileHandler(self.log_file),
+                logging.StreamHandler()
+            ]
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.info(f"Initialized Experiment Logger for: {self.experiment_name}")
+
+    def log_info(self, message: str):
+        self.logger.info(message)
+
+    def log_hyperparams(self, params: dict):
+        path = os.path.join(self.run_dir, "hyperparams.json")
+        with open(path, 'w') as f:
+            json.dump(params, f, indent=4)
+        self.logger.info(f"Hyperparameters saved to {path}")
+
+    def log_epoch(self, epoch: int, train_loss: float, val_loss: float = None, val_acc: float = None):
+        self.metrics["epochs"].append(epoch)
+        self.metrics["train_loss"].append(train_loss)
+        if val_loss is not None:
+            self.metrics["val_loss"].append(val_loss)
+        if val_acc is not None:
+            self.metrics["val_acc"].append(val_acc)
             
+        with open(self.metrics_file, 'w') as f:
+            json.dump(self.metrics, f, indent=4)
+            
+        msg = f"Epoch {epoch} | Train Loss: {train_loss:.4f}"
+        if val_loss is not None:
+            msg += f" | Val Loss: {val_loss:.4f}"
+        if val_acc is not None:
+            msg += f" | Val Acc: {val_acc:.4f}"
+        self.logger.info(msg)
+
     def plot_losses(self):
-        plt.figure(figsize=(10, 6))
-        epochs = range(1, len(self.train_losses) + 1)
-        plt.plot(epochs, self.train_losses, label='Train Loss', marker='o')
-        if self.val_losses and self.val_losses[0] is not None:
-            plt.plot(epochs, self.val_losses, label='Validation Loss', marker='o')
-            
-        plt.title(f'Training & Validation Loss ({self.model_type})')
-        plt.xlabel('Epochs')
-        plt.ylabel('Loss')
+        plt.figure(figsize=(10, 5))
+        plt.plot(self.metrics["epochs"], self.metrics["train_loss"], label="Train Loss")
+        if self.metrics["val_loss"]:
+            plt.plot(self.metrics["epochs"], self.metrics["val_loss"], label="Val Loss")
+        plt.xlabel("Epochs")
+        plt.ylabel("Loss")
+        plt.title(f"Loss Curve - {self.experiment_name}")
         plt.legend()
         plt.grid(True)
-        plt.savefig(os.path.join(self.results_dir, 'loss_graph.png'))
+        plt.savefig(os.path.join(self.run_dir, "loss_curve.png"))
         plt.close()
+
+    def save_model(self, model, optimizer, epoch: int, is_best: bool = False):
+        state = {
+            'epoch': epoch,
+            'model_state_dict': model.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+        }
         
-    def get_best_model_path(self):
-        return os.path.join(self.models_dir, f"{self.model_type}_best.pth")
+        save_dir = os.path.join("Data", "models", self.experiment_name)
+        last_path = os.path.join(save_dir, "model_last.pth")
+        torch.save(state, last_path)
+        self.logger.info(f"Saved last model to {last_path}")
         
-    def get_last_model_path(self):
-        return os.path.join(self.models_dir, f"{self.model_type}_last.pth")
+        if is_best:
+            best_path = os.path.join(save_dir, "model_best.pth")
+            torch.save(state, best_path)
+            self.logger.info(f"Saved new best model to {best_path}")

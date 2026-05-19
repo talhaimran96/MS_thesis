@@ -1,0 +1,3 @@
+2026-05-19 22:14:59,923 [INFO] Initialized Experiment Logger for: sth_mae_pretrain
+2026-05-19 22:14:59,924 [INFO] Hyperparameters saved to Results/sth_mae_pretrain_2026-05-19_22-14-59/hyperparams.json
+2026-05-19 22:14:59,924 [INFO] WARNING: Dataset is empty. Check data_dir.

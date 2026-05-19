@@ -1,12 +1,8 @@
-# Project Dependencies
-# Please update this file every time a new package is installed via pip.
-torch
-torchvision
-torchaudio
-decord
-einops
-tqdm
+torch>=2.0.0
+torchvision>=0.15.0
+numpy
 pandas
 matplotlib
-mediapipe
-opencv-python
+tqdm
+scipy
+scikit-learn
