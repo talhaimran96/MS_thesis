@@ -1,0 +1,3 @@
+2026-05-19 22:21:16,654 [INFO] Initialized Experiment Logger for: sth_mae_pretrain
+2026-05-19 22:21:16,655 [INFO] Hyperparameters saved to Results/sth_mae_pretrain_2026-05-19_22-21-16/hyperparams.json
+2026-05-19 22:21:17,707 [INFO] Starting training loop...
