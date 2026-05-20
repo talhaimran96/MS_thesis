@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 import torch.optim as optim
+from tqdm import tqdm
 import sys
 
 # Ensure src is in the path
@@ -94,7 +95,7 @@ def main():
         correct = 0
         total = 0
         
-        for data, labels in dataloader:
+        for data, labels in tqdm(dataloader, desc=f"Epoch {epoch+1}/{args.epochs}"):
             data, labels = data.to(device), labels.to(device)
             optimizer.zero_grad()
             

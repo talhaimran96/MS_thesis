@@ -3,7 +3,9 @@ import argparse
 import torch
 from torch.utils.data import DataLoader
 import torch.optim as optim
+from tqdm import tqdm
 import sys
+import torch.nn.functional as F
 
 # Ensure src is in the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -14,6 +16,8 @@ from src.utils.logger import ExperimentLogger
 
 def nt_xent_loss(out_1, out_2, temperature=0.5):
     """Normalized Temperature-scaled Cross Entropy Loss for contrastive learning."""
+    out_1 = F.normalize(out_1, dim=-1)
+    out_2 = F.normalize(out_2, dim=-1)
     out = torch.cat([out_1, out_2], dim=0)
     sim_matrix = torch.exp(torch.mm(out, out.t().contiguous()) / temperature)
     mask = (torch.ones_like(sim_matrix) - torch.eye(sim_matrix.shape[0], device=sim_matrix.device)).bool()
@@ -21,7 +25,7 @@ def nt_xent_loss(out_1, out_2, temperature=0.5):
     
     pos_sim = torch.exp(torch.sum(out_1 * out_2, dim=-1) / temperature)
     pos_sim = torch.cat([pos_sim, pos_sim], dim=0)
-    loss = (- torch.log(pos_sim / sim_matrix.sum(dim=-1))).mean()
+    loss = (- torch.log(pos_sim / (sim_matrix.sum(dim=-1) + 1e-8))).mean()
     return loss
 
 def main():
@@ -62,7 +66,7 @@ def main():
         model.train()
         total_loss = 0.0
         
-        for batch in dataloader:
+        for batch in tqdm(dataloader, desc=f"Epoch {epoch+1}/{args.epochs}"):
             batch = batch.to(device)
             optimizer.zero_grad()
             

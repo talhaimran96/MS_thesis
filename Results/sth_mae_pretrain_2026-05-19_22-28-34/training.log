@@ -1,0 +1,146 @@
+2026-05-19 22:28:34,291 [INFO] Initialized Experiment Logger for: sth_mae_pretrain
+2026-05-19 22:28:34,291 [INFO] Hyperparameters saved to Results/sth_mae_pretrain_2026-05-19_22-28-34/hyperparams.json
+2026-05-19 22:28:35,252 [INFO] Starting training loop...
+2026-05-19 22:41:08,186 [INFO] Epoch 0 | Train Loss: 0.0591
+2026-05-19 22:41:08,249 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 22:41:08,303 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-19 22:53:04,815 [INFO] Epoch 1 | Train Loss: 0.0400
+2026-05-19 22:53:04,921 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 22:53:05,230 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-19 23:05:02,248 [INFO] Epoch 2 | Train Loss: 0.0245
+2026-05-19 23:05:02,354 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 23:05:02,579 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-19 23:17:01,552 [INFO] Epoch 3 | Train Loss: 0.0163
+2026-05-19 23:17:01,765 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 23:17:01,986 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-19 23:28:57,145 [INFO] Epoch 4 | Train Loss: 0.0141
+2026-05-19 23:28:57,250 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 23:28:57,432 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-19 23:40:54,118 [INFO] Epoch 5 | Train Loss: 0.0131
+2026-05-19 23:40:54,226 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 23:40:54,406 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-19 23:52:47,199 [INFO] Epoch 6 | Train Loss: 0.0124
+2026-05-19 23:52:47,416 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-19 23:52:47,601 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 00:04:46,022 [INFO] Epoch 7 | Train Loss: 0.0119
+2026-05-20 00:04:46,129 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 00:04:46,301 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 00:16:42,047 [INFO] Epoch 8 | Train Loss: 0.0115
+2026-05-20 00:16:42,308 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 00:16:42,491 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 00:28:38,829 [INFO] Epoch 9 | Train Loss: 0.0111
+2026-05-20 00:28:38,937 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 00:28:39,150 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 00:40:35,859 [INFO] Epoch 10 | Train Loss: 0.0108
+2026-05-20 00:40:36,098 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 00:40:36,319 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 00:52:30,644 [INFO] Epoch 11 | Train Loss: 0.0103
+2026-05-20 00:52:30,746 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 00:52:30,954 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 01:04:28,096 [INFO] Epoch 12 | Train Loss: 0.0099
+2026-05-20 01:04:28,332 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 01:04:28,517 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 01:16:24,814 [INFO] Epoch 13 | Train Loss: 0.0096
+2026-05-20 01:16:25,052 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 01:16:25,235 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 01:28:23,547 [INFO] Epoch 14 | Train Loss: 0.0093
+2026-05-20 01:28:23,651 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 01:28:26,961 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 01:40:22,751 [INFO] Epoch 15 | Train Loss: 0.0091
+2026-05-20 01:40:22,857 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 01:40:23,081 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 01:52:19,474 [INFO] Epoch 16 | Train Loss: 0.0089
+2026-05-20 01:52:19,577 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 01:52:19,753 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 02:04:15,992 [INFO] Epoch 17 | Train Loss: 0.0088
+2026-05-20 02:04:16,226 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 02:04:16,407 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 02:16:12,084 [INFO] Epoch 18 | Train Loss: 0.0086
+2026-05-20 02:16:12,194 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 02:16:12,374 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 02:28:06,669 [INFO] Epoch 19 | Train Loss: 0.0085
+2026-05-20 02:28:15,456 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 02:28:24,287 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 02:40:19,028 [INFO] Epoch 20 | Train Loss: 0.0084
+2026-05-20 02:40:19,301 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 02:40:19,483 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 02:52:18,004 [INFO] Epoch 21 | Train Loss: 0.0083
+2026-05-20 02:52:18,113 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 02:52:18,333 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 03:04:18,876 [INFO] Epoch 22 | Train Loss: 0.0082
+2026-05-20 03:04:18,988 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 03:04:19,163 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 03:16:14,167 [INFO] Epoch 23 | Train Loss: 0.0081
+2026-05-20 03:16:14,273 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 03:16:14,555 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 03:28:06,015 [INFO] Epoch 24 | Train Loss: 0.0080
+2026-05-20 03:28:06,122 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 03:28:06,305 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 03:40:01,176 [INFO] Epoch 25 | Train Loss: 0.0080
+2026-05-20 03:40:01,281 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 03:40:01,455 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 03:51:56,762 [INFO] Epoch 26 | Train Loss: 0.0079
+2026-05-20 03:51:56,865 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 03:51:57,079 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 04:03:57,474 [INFO] Epoch 27 | Train Loss: 0.0078
+2026-05-20 04:03:57,689 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 04:03:57,909 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 04:15:54,419 [INFO] Epoch 28 | Train Loss: 0.0077
+2026-05-20 04:15:54,626 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 04:15:54,815 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 04:27:50,141 [INFO] Epoch 29 | Train Loss: 0.0077
+2026-05-20 04:27:50,249 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 04:27:50,428 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 04:39:43,434 [INFO] Epoch 30 | Train Loss: 0.0076
+2026-05-20 04:39:43,537 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 04:39:43,719 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 04:51:39,139 [INFO] Epoch 31 | Train Loss: 0.0076
+2026-05-20 04:51:39,401 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 04:51:39,583 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 05:03:40,736 [INFO] Epoch 32 | Train Loss: 0.0076
+2026-05-20 05:03:40,841 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 05:03:41,059 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 05:15:38,912 [INFO] Epoch 33 | Train Loss: 0.0075
+2026-05-20 05:15:39,018 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 05:15:39,204 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 05:27:36,292 [INFO] Epoch 34 | Train Loss: 0.0075
+2026-05-20 05:27:36,393 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 05:27:36,566 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 05:39:31,500 [INFO] Epoch 35 | Train Loss: 0.0075
+2026-05-20 05:39:31,709 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 05:39:31,890 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 05:51:27,336 [INFO] Epoch 36 | Train Loss: 0.0074
+2026-05-20 05:51:27,548 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 05:51:27,731 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 06:03:23,590 [INFO] Epoch 37 | Train Loss: 0.0074
+2026-05-20 06:03:23,847 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 06:03:24,057 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 06:15:25,028 [INFO] Epoch 38 | Train Loss: 0.0074
+2026-05-20 06:15:25,138 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 06:15:38,096 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 06:27:32,496 [INFO] Epoch 39 | Train Loss: 0.0074
+2026-05-20 06:27:32,601 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 06:27:32,819 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 06:39:24,226 [INFO] Epoch 40 | Train Loss: 0.0073
+2026-05-20 06:39:24,435 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 06:39:24,620 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 06:51:20,272 [INFO] Epoch 41 | Train Loss: 0.0073
+2026-05-20 06:51:20,482 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 06:51:20,667 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 07:03:18,450 [INFO] Epoch 42 | Train Loss: 0.0073
+2026-05-20 07:03:18,663 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 07:03:18,847 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 07:15:15,297 [INFO] Epoch 43 | Train Loss: 0.0073
+2026-05-20 07:15:15,401 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 07:15:15,576 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 07:27:09,480 [INFO] Epoch 44 | Train Loss: 0.0073
+2026-05-20 07:27:09,754 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 07:27:09,945 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 07:39:05,189 [INFO] Epoch 45 | Train Loss: 0.0073
+2026-05-20 07:39:05,297 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 07:39:06,988 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 07:51:01,707 [INFO] Epoch 46 | Train Loss: 0.0072
+2026-05-20 07:51:01,810 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth
+2026-05-20 07:51:01,986 [INFO] Saved new best model to Data/models/sth_mae_pretrain/model_best.pth
+2026-05-20 08:03:00,970 [INFO] Epoch 47 | Train Loss: 0.0072
+2026-05-20 08:03:01,073 [INFO] Saved last model to Data/models/sth_mae_pretrain/model_last.pth

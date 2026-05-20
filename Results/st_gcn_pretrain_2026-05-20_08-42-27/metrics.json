@@ -1,0 +1,12 @@
+{
+    "train_loss": [
+        NaN,
+        NaN
+    ],
+    "val_loss": [],
+    "val_acc": [],
+    "epochs": [
+        0,
+        1
+    ]
+}

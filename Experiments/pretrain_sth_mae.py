@@ -3,6 +3,7 @@ import argparse
 import torch
 from torch.utils.data import DataLoader
 import torch.optim as optim
+from tqdm import tqdm
 import sys
 
 # Ensure src is in the path
@@ -52,7 +53,7 @@ def main():
         model.train()
         total_loss = 0.0
         
-        for batch in dataloader:
+        for batch in tqdm(dataloader, desc=f"Epoch {epoch+1}/{args.epochs}"):
             batch = batch.to(device)
             optimizer.zero_grad()
             
