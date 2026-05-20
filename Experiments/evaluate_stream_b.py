@@ -69,8 +69,8 @@ def main():
         in_features = 128
         mode = 'graph'
     else:
-        backbone = STH_MAE(target_shape=(32, 32, 32), patch_size=(4, 4, 4), in_channels=1, embed_dim=256)
-        in_features = 256
+        backbone = STH_MAE(target_shape=(32, 32, 32), patch_size=(4, 4, 4), in_channels=1)
+        in_features = 768
         mode = 'heatmap'
         
     # Load pretrained weights

@@ -8,7 +8,7 @@ class STH_MAE(nn.Module):
     Spatial-Temporal Heatmap Masked Autoencoder (STH-MAE).
     Processes dense 3D Heatmap Volumes.
     """
-    def __init__(self, target_shape=(32, 32, 32), patch_size=(4, 4, 4), in_channels=1, embed_dim=256, depth=4, decoder_depth=2):
+    def __init__(self, target_shape=(32, 32, 32), patch_size=(4, 4, 4), in_channels=1, embed_dim=768, depth=12, decoder_depth=4):
         super(STH_MAE, self).__init__()
         
         self.target_shape = target_shape
@@ -30,7 +30,7 @@ class STH_MAE(nn.Module):
         self.pos_embed = nn.Parameter(torch.zeros(1, self.num_patches, embed_dim))
         
         # Encoder
-        encoder_layer = nn.TransformerEncoderLayer(d_model=embed_dim, nhead=8, dim_feedforward=embed_dim*4, batch_first=True)
+        encoder_layer = nn.TransformerEncoderLayer(d_model=embed_dim, nhead=12, dim_feedforward=embed_dim*4, batch_first=True)
         self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=depth)
         
         # Decoder
@@ -38,7 +38,7 @@ class STH_MAE(nn.Module):
         self.mask_token = nn.Parameter(torch.zeros(1, 1, embed_dim))
         self.decoder_pos_embed = nn.Parameter(torch.zeros(1, self.num_patches, embed_dim))
         
-        decoder_layer = nn.TransformerEncoderLayer(d_model=embed_dim, nhead=8, dim_feedforward=embed_dim*4, batch_first=True)
+        decoder_layer = nn.TransformerEncoderLayer(d_model=embed_dim, nhead=12, dim_feedforward=embed_dim*4, batch_first=True)
         self.decoder = nn.TransformerEncoder(decoder_layer, num_layers=decoder_depth)
         
         # Reconstruction Head

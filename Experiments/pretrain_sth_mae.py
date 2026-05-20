@@ -33,7 +33,7 @@ def main():
         
     dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True, num_workers=2)
     
-    model = STH_MAE(target_shape=(32, 32, 32), patch_size=(4, 4, 4), in_channels=1, embed_dim=256)
+    model = STH_MAE(target_shape=(32, 32, 32), patch_size=(4, 4, 4), in_channels=1)
     optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.05)
     
     start_epoch = 0
