@@ -1,7 +1,0 @@
-2026-05-20 08:42:27,321 [INFO] Initialized Experiment Logger for: st_gcn_pretrain
-2026-05-20 08:42:27,321 [INFO] Hyperparameters saved to Results/st_gcn_pretrain_2026-05-20_08-42-27/hyperparams.json
-2026-05-20 08:42:28,265 [INFO] Starting training loop...
-2026-05-20 08:44:13,966 [INFO] Epoch 0 | Train Loss: nan
-2026-05-20 08:44:13,971 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
-2026-05-20 08:45:58,774 [INFO] Epoch 1 | Train Loss: nan
-2026-05-20 08:45:58,779 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth

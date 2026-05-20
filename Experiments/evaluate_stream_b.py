@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader
 import torch.optim as optim
 from tqdm import tqdm
 import sys
+from sklearn.metrics import precision_recall_fscore_support
 
 # Ensure src is in the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -54,11 +55,12 @@ class FallClassifier(nn.Module):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate Stream B on Fall Detection Task")
     parser.add_argument('--model_type', type=str, choices=['gcn', 'sth_mae'], required=True)
-    parser.add_argument('--pretrained_weights', type=str, required=True)
+    parser.add_argument('--pretrained_weights', type=str, default="", help='Path to pretrained weights. Empty for from-scratch.')
     parser.add_argument('--epochs', type=int, default=20)
     args = parser.parse_args()
     
-    logger = ExperimentLogger(experiment_name=f"eval_{args.model_type}")
+    weight_status = "pretrained" if args.pretrained_weights else "scratch"
+    logger = ExperimentLogger(experiment_name=f"eval_{args.model_type}_{weight_status}")
     
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
@@ -84,8 +86,13 @@ def main():
     dataset = DummyFallDataset(mode=mode)
     dataloader = DataLoader(dataset, batch_size=8, shuffle=True)
     
-    optimizer = optim.Adam(model.parameters(), lr=1e-4)
-    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=1e-5)
+    
+    # Implementing Class-Weighted Loss to handle severe class imbalance
+    # Assuming class 0 is ADL and class 1 is Fall (minority class)
+    # Give a higher weight (e.g., 10x) to the Fall class
+    class_weights = torch.tensor([1.0, 1.0], dtype=torch.float32).to(device)
+    criterion = nn.CrossEntropyLoss(weight=class_weights)
     
     logger.log_info(f"Starting Fine-tuning Evaluation for {args.model_type}")
     
@@ -94,6 +101,9 @@ def main():
         total_loss = 0
         correct = 0
         total = 0
+        
+        all_preds = []
+        all_labels = []
         
         for data, labels in tqdm(dataloader, desc=f"Epoch {epoch+1}/{args.epochs}"):
             data, labels = data.to(device), labels.to(device)
@@ -109,12 +119,20 @@ def main():
             total += labels.size(0)
             correct += predicted.eq(labels).sum().item()
             
+            # Collect predictions for metric calculation and confusion matrix
+            all_preds.extend(predicted.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+                
         train_acc = 100. * correct / total
         avg_loss = total_loss / len(dataloader)
         
-        logger.log_epoch(epoch, train_loss=avg_loss, val_acc=train_acc)
+        # Calculate Precision, Recall, and F1
+        precision, recall, f1, _ = precision_recall_fscore_support(all_labels, all_preds, average='binary', zero_division=0)
+        
+        logger.log_epoch(epoch, train_loss=avg_loss, val_acc=train_acc, val_precision=precision, val_recall=recall, val_f1=f1)
         
     logger.plot_losses()
+    logger.save_evaluation_results(all_preds, all_labels)
     logger.log_info("Evaluation complete.")
     
 if __name__ == "__main__":
