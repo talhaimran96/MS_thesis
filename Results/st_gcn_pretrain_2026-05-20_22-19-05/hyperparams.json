@@ -1,0 +1,7 @@
+{
+    "data_dir": "Data/raw/nturgbd_skeletons_s001_to_s017",
+    "batch_size": 16,
+    "epochs": 50,
+    "lr": 0.001,
+    "resume": ""
+}

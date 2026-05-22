@@ -1,0 +1,105 @@
+2026-05-20 22:19:05,254 [INFO] Initialized Experiment Logger for: st_gcn_pretrain
+2026-05-20 22:19:05,254 [INFO] Hyperparameters saved to Results/st_gcn_pretrain_2026-05-20_22-19-05/hyperparams.json
+2026-05-20 22:19:06,222 [INFO] Starting training loop...
+2026-05-20 22:28:01,554 [INFO] Epoch 0 | Train Loss: 1.6377
+2026-05-20 22:28:01,599 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 22:36:51,392 [INFO] Epoch 1 | Train Loss: 1.5642
+2026-05-20 22:36:51,436 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 22:45:41,752 [INFO] Epoch 2 | Train Loss: 1.5472
+2026-05-20 22:45:41,797 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 22:54:31,912 [INFO] Epoch 3 | Train Loss: 1.5397
+2026-05-20 22:54:31,956 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:03:21,999 [INFO] Epoch 4 | Train Loss: 1.5360
+2026-05-20 23:03:22,043 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:12:12,103 [INFO] Epoch 5 | Train Loss: 1.5338
+2026-05-20 23:12:12,147 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:21:02,279 [INFO] Epoch 6 | Train Loss: 1.5304
+2026-05-20 23:21:02,323 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:29:52,533 [INFO] Epoch 7 | Train Loss: 1.5297
+2026-05-20 23:29:52,577 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:38:42,782 [INFO] Epoch 8 | Train Loss: 1.5291
+2026-05-20 23:38:42,826 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:47:32,928 [INFO] Epoch 9 | Train Loss: 1.5288
+2026-05-20 23:47:32,972 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-20 23:56:23,032 [INFO] Epoch 10 | Train Loss: 1.5272
+2026-05-20 23:56:23,076 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:05:13,236 [INFO] Epoch 11 | Train Loss: 1.5280
+2026-05-21 00:05:13,282 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:14:03,599 [INFO] Epoch 12 | Train Loss: 1.5265
+2026-05-21 00:14:03,643 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:22:53,828 [INFO] Epoch 13 | Train Loss: 1.5260
+2026-05-21 00:22:53,873 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:31:44,065 [INFO] Epoch 14 | Train Loss: 1.5254
+2026-05-21 00:31:44,109 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:40:34,238 [INFO] Epoch 15 | Train Loss: 1.5256
+2026-05-21 00:40:34,282 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:49:24,317 [INFO] Epoch 16 | Train Loss: 1.5253
+2026-05-21 00:49:24,363 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 00:58:14,342 [INFO] Epoch 17 | Train Loss: 1.5257
+2026-05-21 00:58:14,389 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 01:07:04,579 [INFO] Epoch 18 | Train Loss: 1.5248
+2026-05-21 01:07:04,624 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 01:15:54,631 [INFO] Epoch 19 | Train Loss: 1.5241
+2026-05-21 01:15:54,675 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 01:24:44,742 [INFO] Epoch 20 | Train Loss: 1.5241
+2026-05-21 01:24:44,786 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 01:33:34,850 [INFO] Epoch 21 | Train Loss: 1.5234
+2026-05-21 01:33:34,893 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 01:42:25,012 [INFO] Epoch 22 | Train Loss: 1.5237
+2026-05-21 01:42:25,056 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 01:51:15,133 [INFO] Epoch 23 | Train Loss: 1.5233
+2026-05-21 01:51:15,177 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:00:05,159 [INFO] Epoch 24 | Train Loss: 1.5227
+2026-05-21 02:00:05,204 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:08:55,323 [INFO] Epoch 25 | Train Loss: 1.5228
+2026-05-21 02:08:55,368 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:17:45,534 [INFO] Epoch 26 | Train Loss: 1.5223
+2026-05-21 02:17:45,579 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:26:35,655 [INFO] Epoch 27 | Train Loss: 1.5220
+2026-05-21 02:26:35,699 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:35:25,684 [INFO] Epoch 28 | Train Loss: 1.5220
+2026-05-21 02:35:25,728 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:44:15,616 [INFO] Epoch 29 | Train Loss: 1.5220
+2026-05-21 02:44:15,661 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 02:53:05,572 [INFO] Epoch 30 | Train Loss: 1.5217
+2026-05-21 02:53:05,616 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:01:55,510 [INFO] Epoch 31 | Train Loss: 1.5215
+2026-05-21 03:01:55,554 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:10:45,421 [INFO] Epoch 32 | Train Loss: 1.5218
+2026-05-21 03:10:45,469 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:19:35,402 [INFO] Epoch 33 | Train Loss: 1.5216
+2026-05-21 03:19:35,447 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:28:25,511 [INFO] Epoch 34 | Train Loss: 1.5211
+2026-05-21 03:28:25,555 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:37:15,522 [INFO] Epoch 35 | Train Loss: 1.5211
+2026-05-21 03:37:15,566 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:46:05,473 [INFO] Epoch 36 | Train Loss: 1.5211
+2026-05-21 03:46:05,517 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 03:54:55,495 [INFO] Epoch 37 | Train Loss: 1.5208
+2026-05-21 03:54:55,538 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:03:45,488 [INFO] Epoch 38 | Train Loss: 1.5206
+2026-05-21 04:03:45,532 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:12:35,473 [INFO] Epoch 39 | Train Loss: 1.5206
+2026-05-21 04:12:35,520 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:21:25,494 [INFO] Epoch 40 | Train Loss: 1.5204
+2026-05-21 04:21:25,537 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:30:15,545 [INFO] Epoch 41 | Train Loss: 1.5205
+2026-05-21 04:30:15,590 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:39:05,575 [INFO] Epoch 42 | Train Loss: 1.5203
+2026-05-21 04:39:05,619 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:47:55,554 [INFO] Epoch 43 | Train Loss: 1.5206
+2026-05-21 04:47:55,598 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 04:56:45,692 [INFO] Epoch 44 | Train Loss: 1.5204
+2026-05-21 04:56:45,736 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 05:05:35,715 [INFO] Epoch 45 | Train Loss: 1.5201
+2026-05-21 05:05:35,759 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 05:14:25,721 [INFO] Epoch 46 | Train Loss: 1.5198
+2026-05-21 05:14:25,766 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 05:23:15,776 [INFO] Epoch 47 | Train Loss: 1.5202
+2026-05-21 05:23:15,820 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 05:32:05,770 [INFO] Epoch 48 | Train Loss: 1.5199
+2026-05-21 05:32:05,815 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 05:40:55,716 [INFO] Epoch 49 | Train Loss: 1.5201
+2026-05-21 05:40:55,764 [INFO] Saved last model to Data/models/st_gcn_pretrain/model_last.pth
+2026-05-21 05:40:55,825 [INFO] Saved new best model to Data/models/st_gcn_pretrain/model_best.pth
+2026-05-21 05:40:55,927 [INFO] Training complete.
