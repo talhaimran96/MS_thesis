@@ -66,30 +66,30 @@ How to run Experiment A:
 
 **The Control (No SSL)**: Train a baseline Vision Transformer (ViT-Base/Large) and a traditional 3D CNN (e.g., I3D or SlowFast) from scratch (or ImageNet weights) directly on the GMDCSA-24 dataset.
 ```bash
-# (Pending Implementation: evaluate_stream_a.py)
+# Evaluate baseline 3D CNN
 python Experiments/evaluate_stream_a.py --model_type baseline_3dcnn --epochs 50
+
+# Evaluate VideoMAE from scratch (no pretrained weights)
 python Experiments/evaluate_stream_a.py --model_type videomae --pretrained_weights none --epochs 50
 ```
 
 **The Variable (SSL)**: Pretrain the ViT (VideoMAE V2 architecture) on the unlabeled Kinetics-400 subset using 90% Tube Masking. Then, fine-tune only the classification head (linear probing) and subsequently the whole network end-to-end on GMDCSA-24.
 ```bash
-# 1. Pretrain VideoMAE on Kinetics-400 (Currently Implemented)
+# 1. Pretrain VideoMAE on Kinetics-400
 python Experiments/pretrain_stream_a.py --epochs 50
 
-# 2. Fine-tune on GMDCSA-24 (Pending Implementation: evaluate_stream_a.py)
-python Experiments/evaluate_stream_a.py --model_type videomae --pretrained_weights Data/models/exp-A-rgb-baseline_videomae/model_last.pth --epochs 20
+# 2. Fine-tune on GMDCSA-24 (Uses 4-Fold Leave-One-Subject-Out CV)
+# Uses --freeze_epochs 5 to run Linear Probing for the first 5 epochs before full network fine-tuning
+python Experiments/evaluate_stream_a.py --model_type videomae --pretrained_weights Data/models/exp-A-rgb-baseline_videomae/model_last.pth --epochs 20 --freeze_epochs 5
 ```
 
 **Data Ablation**: Fine-tune both the Control and Variable models on 10%, 50%, and 100% splits of GMDCSA-24 to generate a curve showing performance vs. amount of labeled data.
 ```bash
-# (Pending Implementation)
-python Experiments/evaluate_stream_a.py --split 0.1 --epochs 20
-python Experiments/evaluate_stream_a.py --split 0.5 --epochs 20
-python Experiments/evaluate_stream_a.py --split 1.0 --epochs 20
+# Run the automated ablation bash script
+bash Experiments/run_ablation_stream_a.sh
 ```
 
 **Testing**: Evaluate all variants on the quarantined OOPS-Fall dataset.
 ```bash
-# (Pending Implementation: test_stream_a.py)
 python Experiments/test_stream_a.py --dataset oops_fall --weights Data/models/...
 ```

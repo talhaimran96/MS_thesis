@@ -170,3 +170,24 @@ class VideoMAE(nn.Module):
         pred = self.forward_decoder(latent, mask)
         loss = self.forward_loss(imgs, pred, mask)
         return loss, pred, mask
+
+class VideoMAEForClassification(nn.Module):
+    def __init__(self, videomae_model, num_classes=2):
+        super().__init__()
+        self.videomae = videomae_model
+        embed_dim = self.videomae.cls_token.shape[-1]
+        self.fc = nn.Linear(embed_dim, num_classes)
+        
+    def forward(self, imgs):
+        B = imgs.shape[0]
+        N = self.videomae.patch_embed.num_patches
+        # No masking for downstream classification task
+        mask = torch.zeros(B, N, device=imgs.device) 
+        
+        # Get features from encoder
+        features = self.videomae.forward_encoder(imgs, mask)
+        
+        # Use cls_token for classification
+        cls_token = features[:, 0]
+        logits = self.fc(cls_token)
+        return logits
