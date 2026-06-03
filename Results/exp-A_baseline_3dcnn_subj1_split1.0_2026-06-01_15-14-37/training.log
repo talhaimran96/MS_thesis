@@ -1,0 +1,260 @@
+2026-06-01 15:14:37,008 [INFO] Initialized Experiment Logger for: exp-A_baseline_3dcnn_subj1_split1.0
+2026-06-01 15:14:37,008 [INFO] Hyperparameters saved to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37/hyperparams.json
+2026-06-01 15:14:37,008 [INFO] --- Fold for Test Subject 1 ---
+2026-06-01 15:14:37,836 [INFO] Freezing backbone for 5 epochs.
+2026-06-01 15:16:49,199 [INFO] Epoch 0 | Train Loss: 0.7138 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:16:49,404 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:16:49,501 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:16:49,587 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:19:02,292 [INFO] Epoch 1 | Train Loss: 0.6970 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:19:02,486 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:19:02,860 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:19:03,204 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:21:17,761 [INFO] Epoch 2 | Train Loss: 0.7016 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:21:17,957 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:21:18,342 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:21:18,686 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:23:37,413 [INFO] Epoch 3 | Train Loss: 0.6988 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:23:37,602 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:23:37,977 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:23:38,327 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:25:48,603 [INFO] Epoch 4 | Train Loss: 0.7051 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:25:48,802 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:25:49,745 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:25:50,088 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:25:50,089 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-01 15:28:04,662 [INFO] Epoch 5 | Train Loss: 0.6883 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:28:04,846 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:28:11,698 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:28:31,404 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:30:44,644 [INFO] Epoch 6 | Train Loss: 0.6185 | Val Loss: 0.0000 | Acc: 0.4688 | F1: 0.6383 | P: 0.4839 | R: 0.9375
+2026-06-01 15:30:46,018 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:33:02,890 [INFO] Epoch 7 | Train Loss: 0.5652 | Val Loss: 0.0000 | Acc: 0.5938 | F1: 0.6977 | P: 0.5556 | R: 0.9375
+2026-06-01 15:33:03,079 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj1_split1.0_2026-06-01_15-14-37
+2026-06-01 15:33:14,610 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:33:54,570 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_best.pth
+2026-06-01 15:36:07,567 [INFO] Epoch 8 | Train Loss: 0.5614 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6154 | P: 0.5217 | R: 0.7500
+2026-06-01 15:36:08,876 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:38:21,978 [INFO] Epoch 9 | Train Loss: 0.5032 | Val Loss: 0.0000 | Acc: 0.5625 | F1: 0.6111 | P: 0.5500 | R: 0.6875
+2026-06-01 15:38:39,410 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:40:56,081 [INFO] Epoch 10 | Train Loss: 0.4624 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:40:57,415 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:43:11,800 [INFO] Epoch 11 | Train Loss: 0.4532 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:43:13,156 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:45:34,410 [INFO] Epoch 12 | Train Loss: 0.4688 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:46:01,452 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:48:14,169 [INFO] Epoch 13 | Train Loss: 0.4016 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:48:15,535 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:50:28,802 [INFO] Epoch 14 | Train Loss: 0.4246 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6809 | P: 0.5161 | R: 1.0000
+2026-06-01 15:50:30,129 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:52:45,501 [INFO] Epoch 15 | Train Loss: 0.4844 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:53:11,353 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:55:27,954 [INFO] Epoch 16 | Train Loss: 0.4408 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:55:29,288 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 15:57:44,673 [INFO] Epoch 17 | Train Loss: 0.4219 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 15:57:46,002 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 16:00:03,072 [INFO] Epoch 18 | Train Loss: 0.3931 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-01 16:00:47,293 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 16:03:02,935 [INFO] Epoch 19 | Train Loss: 0.3543 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6522 | P: 0.5000 | R: 0.9375
+2026-06-01 16:03:04,341 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj1_split1.0/model_last.pth
+2026-06-01 16:03:04,341 [INFO] Finished Subj 1 with Best F1: 0.6977
+2026-06-01 16:03:04,341 [INFO] Initialized Experiment Logger for: exp-A_baseline_3dcnn_subj2_split1.0
+2026-06-01 16:03:04,342 [INFO] Hyperparameters saved to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04/hyperparams.json
+2026-06-01 16:03:04,342 [INFO] --- Fold for Test Subject 2 ---
+2026-06-01 16:03:04,749 [INFO] Freezing backbone for 5 epochs.
+2026-06-01 16:05:27,328 [INFO] Epoch 0 | Train Loss: 0.6848 | Val Loss: 0.0000 | Acc: 0.4583 | F1: 0.4348 | P: 0.4762 | R: 0.4000
+2026-06-01 16:05:27,643 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:05:27,736 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:05:27,832 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:07:46,649 [INFO] Epoch 1 | Train Loss: 0.6963 | Val Loss: 0.0000 | Acc: 0.3750 | F1: 0.2105 | P: 0.3077 | R: 0.1600
+2026-06-01 16:07:53,003 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:10:07,710 [INFO] Epoch 2 | Train Loss: 0.6894 | Val Loss: 0.0000 | Acc: 0.4792 | F1: 0.5098 | P: 0.5000 | R: 0.5200
+2026-06-01 16:10:07,906 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:10:08,293 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:10:08,677 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:12:24,930 [INFO] Epoch 3 | Train Loss: 0.6883 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.4255 | P: 0.4545 | R: 0.4000
+2026-06-01 16:12:25,429 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:14:41,824 [INFO] Epoch 4 | Train Loss: 0.6824 | Val Loss: 0.0000 | Acc: 0.4792 | F1: 0.4898 | P: 0.5000 | R: 0.4800
+2026-06-01 16:14:42,352 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:14:42,353 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-01 16:17:02,230 [INFO] Epoch 5 | Train Loss: 0.6812 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.4490 | P: 0.4583 | R: 0.4400
+2026-06-01 16:17:03,556 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:19:20,723 [INFO] Epoch 6 | Train Loss: 0.6389 | Val Loss: 0.0000 | Acc: 0.5417 | F1: 0.5000 | P: 0.5789 | R: 0.4400
+2026-06-01 16:19:55,929 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:22:11,016 [INFO] Epoch 7 | Train Loss: 0.6092 | Val Loss: 0.0000 | Acc: 0.5625 | F1: 0.5333 | P: 0.6000 | R: 0.4800
+2026-06-01 16:22:11,215 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:22:12,480 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:22:13,653 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:24:33,652 [INFO] Epoch 8 | Train Loss: 0.5656 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.5556 | P: 0.9091 | R: 0.4000
+2026-06-01 16:24:33,852 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:25:00,014 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:25:01,219 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:27:16,195 [INFO] Epoch 9 | Train Loss: 0.5490 | Val Loss: 0.0000 | Acc: 0.6250 | F1: 0.4375 | P: 1.0000 | R: 0.2800
+2026-06-01 16:27:17,659 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:29:39,015 [INFO] Epoch 10 | Train Loss: 0.5304 | Val Loss: 0.0000 | Acc: 0.6458 | F1: 0.5641 | P: 0.7857 | R: 0.4400
+2026-06-01 16:29:39,216 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:30:23,685 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:30:31,679 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:32:55,554 [INFO] Epoch 11 | Train Loss: 0.5450 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.5556 | P: 0.9091 | R: 0.4000
+2026-06-01 16:32:56,886 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:35:12,620 [INFO] Epoch 12 | Train Loss: 0.4334 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.6316 | P: 0.9231 | R: 0.4800
+2026-06-01 16:35:12,821 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:35:14,483 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:35:15,824 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:37:35,762 [INFO] Epoch 13 | Train Loss: 0.4148 | Val Loss: 0.0000 | Acc: 0.6875 | F1: 0.5946 | P: 0.9167 | R: 0.4400
+2026-06-01 16:37:37,493 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:39:52,085 [INFO] Epoch 14 | Train Loss: 0.4404 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.6316 | P: 0.9231 | R: 0.4800
+2026-06-01 16:39:52,284 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:39:53,588 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:39:55,147 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:42:09,501 [INFO] Epoch 15 | Train Loss: 0.4399 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.7500 | P: 0.6774 | R: 0.8400
+2026-06-01 16:42:09,704 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj2_split1.0_2026-06-01_16-03-04
+2026-06-01 16:42:31,132 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:43:02,227 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_best.pth
+2026-06-01 16:45:19,649 [INFO] Epoch 16 | Train Loss: 0.4624 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.6000 | P: 0.8000 | R: 0.4800
+2026-06-01 16:45:21,121 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:47:38,762 [INFO] Epoch 17 | Train Loss: 0.3935 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.5556 | P: 0.9091 | R: 0.4000
+2026-06-01 16:48:03,221 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:50:19,008 [INFO] Epoch 18 | Train Loss: 0.4397 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.6000 | P: 0.8000 | R: 0.4800
+2026-06-01 16:50:20,448 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:52:36,770 [INFO] Epoch 19 | Train Loss: 0.4845 | Val Loss: 0.0000 | Acc: 0.6250 | F1: 0.4706 | P: 0.8889 | R: 0.3200
+2026-06-01 16:52:38,231 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj2_split1.0/model_last.pth
+2026-06-01 16:52:38,231 [INFO] Finished Subj 2 with Best F1: 0.7500
+2026-06-01 16:52:38,231 [INFO] Initialized Experiment Logger for: exp-A_baseline_3dcnn_subj3_split1.0
+2026-06-01 16:52:38,231 [INFO] Hyperparameters saved to Results/exp-A_baseline_3dcnn_subj3_split1.0_2026-06-01_16-52-38/hyperparams.json
+2026-06-01 16:52:38,231 [INFO] --- Fold for Test Subject 3 ---
+2026-06-01 16:52:38,644 [INFO] Freezing backbone for 5 epochs.
+2026-06-01 16:54:56,305 [INFO] Epoch 0 | Train Loss: 0.6884 | Val Loss: 0.0000 | Acc: 0.4419 | F1: 0.2500 | P: 0.3636 | R: 0.1905
+2026-06-01 16:54:56,489 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj3_split1.0_2026-06-01_16-52-38
+2026-06-01 16:54:56,586 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 16:54:56,675 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_best.pth
+2026-06-01 16:57:16,162 [INFO] Epoch 1 | Train Loss: 0.6894 | Val Loss: 0.0000 | Acc: 0.4651 | F1: 0.3030 | P: 0.4167 | R: 0.2381
+2026-06-01 16:57:16,347 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj3_split1.0_2026-06-01_16-52-38
+2026-06-01 16:57:16,860 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 16:57:17,334 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_best.pth
+2026-06-01 16:59:30,361 [INFO] Epoch 2 | Train Loss: 0.6822 | Val Loss: 0.0000 | Acc: 0.3953 | F1: 0.2353 | P: 0.3077 | R: 0.1905
+2026-06-01 16:59:30,876 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:01:45,265 [INFO] Epoch 3 | Train Loss: 0.6793 | Val Loss: 0.0000 | Acc: 0.4419 | F1: 0.2941 | P: 0.3846 | R: 0.2381
+2026-06-01 17:01:45,801 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:03:58,603 [INFO] Epoch 4 | Train Loss: 0.6843 | Val Loss: 0.0000 | Acc: 0.4651 | F1: 0.2581 | P: 0.4000 | R: 0.1905
+2026-06-01 17:03:59,673 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:03:59,673 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-01 17:06:20,887 [INFO] Epoch 5 | Train Loss: 0.6644 | Val Loss: 0.0000 | Acc: 0.4419 | F1: 0.2941 | P: 0.3846 | R: 0.2381
+2026-06-01 17:06:34,913 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:08:51,191 [INFO] Epoch 6 | Train Loss: 0.6310 | Val Loss: 0.0000 | Acc: 0.6977 | F1: 0.6829 | P: 0.7000 | R: 0.6667
+2026-06-01 17:08:51,393 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj3_split1.0_2026-06-01_16-52-38
+2026-06-01 17:08:52,943 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:08:54,432 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_best.pth
+2026-06-01 17:11:09,599 [INFO] Epoch 7 | Train Loss: 0.6041 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.6809 | P: 0.6154 | R: 0.7619
+2026-06-01 17:11:36,701 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:13:53,903 [INFO] Epoch 8 | Train Loss: 0.5546 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.6538 | P: 0.5484 | R: 0.8095
+2026-06-01 17:13:55,502 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:16:12,241 [INFO] Epoch 9 | Train Loss: 0.4746 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6667 | P: 0.5667 | R: 0.8095
+2026-06-01 17:16:13,917 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:18:26,911 [INFO] Epoch 10 | Train Loss: 0.4626 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.6538 | P: 0.5484 | R: 0.8095
+2026-06-01 17:18:57,035 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:21:12,985 [INFO] Epoch 11 | Train Loss: 0.4847 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.6939 | P: 0.6071 | R: 0.8095
+2026-06-01 17:21:13,191 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj3_split1.0_2026-06-01_16-52-38
+2026-06-01 17:21:14,757 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:21:16,290 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_best.pth
+2026-06-01 17:23:38,361 [INFO] Epoch 12 | Train Loss: 0.4684 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6667 | P: 0.5667 | R: 0.8095
+2026-06-01 17:24:23,889 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:26:46,183 [INFO] Epoch 13 | Train Loss: 0.4058 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.6809 | P: 0.6154 | R: 0.7619
+2026-06-01 17:26:47,498 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:29:08,427 [INFO] Epoch 14 | Train Loss: 0.4776 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.6538 | P: 0.5484 | R: 0.8095
+2026-06-01 17:29:42,377 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:32:00,330 [INFO] Epoch 15 | Train Loss: 0.4311 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.6809 | P: 0.6154 | R: 0.7619
+2026-06-01 17:32:01,700 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:34:18,664 [INFO] Epoch 16 | Train Loss: 0.3742 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6800 | P: 0.5862 | R: 0.8095
+2026-06-01 17:34:20,033 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:36:35,296 [INFO] Epoch 17 | Train Loss: 0.4268 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6667 | P: 0.5667 | R: 0.8095
+2026-06-01 17:37:21,315 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:39:37,369 [INFO] Epoch 18 | Train Loss: 0.4407 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6667 | P: 0.5667 | R: 0.8095
+2026-06-01 17:39:38,731 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:41:50,446 [INFO] Epoch 19 | Train Loss: 0.3261 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6800 | P: 0.5862 | R: 0.8095
+2026-06-01 17:41:51,846 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj3_split1.0/model_last.pth
+2026-06-01 17:41:51,846 [INFO] Finished Subj 3 with Best F1: 0.6939
+2026-06-01 17:41:51,847 [INFO] Initialized Experiment Logger for: exp-A_baseline_3dcnn_subj4_split1.0
+2026-06-01 17:41:51,847 [INFO] Hyperparameters saved to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51/hyperparams.json
+2026-06-01 17:41:51,847 [INFO] --- Fold for Test Subject 4 ---
+2026-06-01 17:41:53,924 [INFO] Freezing backbone for 5 epochs.
+2026-06-01 17:44:16,768 [INFO] Epoch 0 | Train Loss: 0.7104 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 17:44:16,957 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 17:44:17,057 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:44:17,152 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 17:46:32,754 [INFO] Epoch 1 | Train Loss: 0.6954 | Val Loss: 0.0000 | Acc: 0.4324 | F1: 0.6038 | P: 0.4444 | R: 0.9412
+2026-06-01 17:46:33,243 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:48:49,825 [INFO] Epoch 2 | Train Loss: 0.7026 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 17:48:50,032 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 17:48:50,471 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:48:50,827 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 17:51:11,612 [INFO] Epoch 3 | Train Loss: 0.6958 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 17:51:11,808 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 17:51:12,211 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:51:12,552 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 17:53:27,343 [INFO] Epoch 4 | Train Loss: 0.6880 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 17:53:27,543 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 17:53:27,941 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:53:40,119 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 17:53:40,119 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-01 17:55:59,169 [INFO] Epoch 5 | Train Loss: 0.6680 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 17:55:59,365 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 17:56:00,600 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:56:01,818 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 17:58:18,520 [INFO] Epoch 6 | Train Loss: 0.5918 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 17:58:18,713 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 17:58:32,014 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 17:59:10,350 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:01:26,450 [INFO] Epoch 7 | Train Loss: 0.5420 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:01:26,653 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:01:27,931 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:01:45,418 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:03:57,308 [INFO] Epoch 8 | Train Loss: 0.5139 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:03:57,507 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:03:58,736 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:03:59,924 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:06:13,556 [INFO] Epoch 9 | Train Loss: 0.4908 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:06:13,750 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:06:38,816 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:07:05,943 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:09:17,241 [INFO] Epoch 10 | Train Loss: 0.4797 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:09:17,436 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:09:18,675 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:09:45,729 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:11:59,425 [INFO] Epoch 11 | Train Loss: 0.4334 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:11:59,618 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:12:00,928 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:12:02,108 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:14:16,741 [INFO] Epoch 12 | Train Loss: 0.4706 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:14:16,948 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:14:45,297 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:15:08,835 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:17:20,542 [INFO] Epoch 13 | Train Loss: 0.4677 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:17:20,739 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:17:21,987 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:17:55,498 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:20:10,601 [INFO] Epoch 14 | Train Loss: 0.4901 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:20:10,805 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:20:12,036 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:20:13,223 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:22:28,985 [INFO] Epoch 15 | Train Loss: 0.4403 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:22:29,185 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:23:16,405 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:23:22,086 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:25:34,036 [INFO] Epoch 16 | Train Loss: 0.4265 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:25:34,236 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:25:58,445 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:26:50,647 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:29:04,799 [INFO] Epoch 17 | Train Loss: 0.4077 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:29:05,003 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:29:06,241 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:29:23,687 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:31:39,824 [INFO] Epoch 18 | Train Loss: 0.4532 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-01 18:31:40,026 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:31:41,332 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:31:42,545 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:33:59,382 [INFO] Epoch 19 | Train Loss: 0.3735 | Val Loss: 0.0000 | Acc: 0.6216 | F1: 0.7083 | P: 0.5484 | R: 1.0000
+2026-06-01 18:33:59,588 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_baseline_3dcnn_subj4_split1.0_2026-06-01_17-41-51
+2026-06-01 18:34:23,827 [INFO] Saved last model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_last.pth
+2026-06-01 18:34:51,605 [INFO] Saved new best model to Data/models/exp-A_baseline_3dcnn_subj4_split1.0/model_best.pth
+2026-06-01 18:34:51,605 [INFO] Finished Subj 4 with Best F1: 0.7083
