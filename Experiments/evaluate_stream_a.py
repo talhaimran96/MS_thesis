@@ -24,6 +24,7 @@ def get_args():
     parser.add_argument('--freeze_epochs', default=5, type=int, help='Number of epochs to freeze backbone (linear probing)')
     parser.add_argument('--split', default=1.0, type=float, help='Data ablation split ratio (e.g., 0.1 for 10%)')
     parser.add_argument('--lr', default=1e-4, type=float)
+    parser.add_argument('--augment', action='store_true', help='Enable data augmentation (random flip + temporal jitter) during training')
     return parser.parse_args()
 
 def evaluate(model, data_loader, device):
@@ -63,7 +64,7 @@ def main(args):
         logger.log_info(f"--- Fold for Test Subject {test_subject} ---")
         
         # Load Data
-        dataset_train = GMDCSA24VideoDataset(args.data_path, test_subject=test_subject, split='train', split_ratio=args.split)
+        dataset_train = GMDCSA24VideoDataset(args.data_path, test_subject=test_subject, split='train', split_ratio=args.split, augment=args.augment)
         dataset_val = GMDCSA24VideoDataset(args.data_path, test_subject=test_subject, split='val')
         
         if len(dataset_train) == 0 or len(dataset_val) == 0:

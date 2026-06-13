@@ -118,14 +118,18 @@ class KineticsVideoDataset(Dataset):
             return torch.zeros(3, self.num_frames, self.frame_size, self.frame_size), label
 
 class GMDCSA24VideoDataset(Dataset):
-    def __init__(self, root_dir, test_subject=1, split='train', split_ratio=1.0, num_frames=16, frame_size=224):
+    def __init__(self, root_dir, test_subject=1, split='train', split_ratio=1.0,
+                 num_frames=16, frame_size=224, augment=False):
         """
         GMDCSA-24 Fall Detection Dataset loader supporting K-Fold CV (Leave-One-Subject-Out).
+        Args:
+            augment (bool): If True, applies random horizontal flip and temporal jitter during training.
         """
         self.root_dir = root_dir
         self.num_frames = num_frames
         self.frame_size = frame_size
         self.split = split
+        self.augment = augment and (split == 'train')  # Only augment training data
         
         self.video_paths = []
         self.labels = []
@@ -199,13 +203,24 @@ class GMDCSA24VideoDataset(Dataset):
                 start_idx = 0
             else:
                 if self.split == 'train':
-                    start_idx = random.randint(0, total_frames - self.num_frames)
+                    # Temporal jitter: random start within ±2 frame offset if augment enabled
+                    base_start = random.randint(0, total_frames - self.num_frames)
+                    if self.augment:
+                        jitter = random.randint(-2, 2)
+                        start_idx = max(0, min(base_start + jitter, total_frames - self.num_frames))
+                    else:
+                        start_idx = base_start
                 else:
                     start_idx = (total_frames - self.num_frames) // 2
                     
             sampled_frames = vframes[start_idx:start_idx + self.num_frames]
-            video_tensor = self.transform_video(sampled_frames)
-            video_tensor = video_tensor.permute(1, 0, 2, 3)
+            video_tensor = self.transform_video(sampled_frames)  # (T, C, H, W)
+            
+            # Random horizontal flip (applied consistently across all frames)
+            if self.augment and random.random() > 0.5:
+                video_tensor = torch.flip(video_tensor, dims=[-1])  # flip width axis
+
+            video_tensor = video_tensor.permute(1, 0, 2, 3)  # (C, T, H, W)
             return video_tensor, label
             
         except Exception as e:
