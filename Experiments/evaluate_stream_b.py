@@ -57,6 +57,8 @@ def main():
     parser.add_argument('--model_type', type=str, choices=['gcn', 'sth_mae'], required=True)
     parser.add_argument('--pretrained_weights', type=str, default="", help='Path to pretrained weights. Empty for from-scratch.')
     parser.add_argument('--epochs', type=int, default=20)
+    parser.add_argument('--mask_ratio', type=float, default=0.90,
+                        help='Masking ratio used during STH-MAE pretraining forward pass (default: 0.90)')
     args = parser.parse_args()
     
     weight_status = "pretrained" if args.pretrained_weights else "scratch"
