@@ -1,0 +1,462 @@
+2026-06-14 11:43:15,142 [INFO] Initialized Experiment Logger for: exp-A_videomae_subj1_split1.0
+2026-06-14 11:43:15,142 [INFO] Hyperparameters saved to Results/exp-A_videomae_subj1_split1.0_2026-06-14_11-43-15/hyperparams.json
+2026-06-14 11:43:15,142 [INFO] --- Fold for Test Subject 1 ---
+2026-06-14 11:43:15,747 [INFO] Freezing backbone for 5 epochs.
+2026-06-14 11:45:32,644 [INFO] Epoch 0 | Train Loss: 0.8215 | Val Loss: 0.0000 | Acc: 0.5625 | F1: 0.6957 | P: 0.5333 | R: 1.0000
+2026-06-14 11:45:32,837 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj1_split1.0_2026-06-14_11-43-15
+2026-06-14 11:45:51,900 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 11:46:25,384 [INFO] Saved new best model to Data/models/exp-A_videomae_subj1_split1.0/model_best.pth
+2026-06-14 11:48:39,133 [INFO] Epoch 1 | Train Loss: 0.7308 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6809 | P: 0.5161 | R: 1.0000
+2026-06-14 11:48:40,432 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 11:51:00,006 [INFO] Epoch 2 | Train Loss: 0.7450 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6809 | P: 0.5161 | R: 1.0000
+2026-06-14 11:51:11,899 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 11:53:28,020 [INFO] Epoch 3 | Train Loss: 0.7112 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-14 11:53:29,293 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 11:55:49,153 [INFO] Epoch 4 | Train Loss: 0.7128 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-14 11:55:50,425 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 11:55:50,426 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-14 11:58:06,773 [INFO] Epoch 5 | Train Loss: 0.7314 | Val Loss: 0.0000 | Acc: 0.4062 | F1: 0.4571 | P: 0.4211 | R: 0.5000
+2026-06-14 11:58:34,360 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:00:51,187 [INFO] Epoch 6 | Train Loss: 0.5955 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-14 12:01:44,313 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:04:06,091 [INFO] Epoch 7 | Train Loss: 0.5628 | Val Loss: 0.0000 | Acc: 0.4062 | F1: 0.4242 | P: 0.4118 | R: 0.4375
+2026-06-14 12:04:33,908 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:06:55,118 [INFO] Epoch 8 | Train Loss: 0.5248 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6809 | P: 0.5161 | R: 1.0000
+2026-06-14 12:07:42,771 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:10:00,915 [INFO] Epoch 9 | Train Loss: 0.5522 | Val Loss: 0.0000 | Acc: 0.4062 | F1: 0.4242 | P: 0.4118 | R: 0.4375
+2026-06-14 12:10:28,590 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:12:47,870 [INFO] Epoch 10 | Train Loss: 0.4238 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.4375 | P: 0.4375 | R: 0.4375
+2026-06-14 12:13:11,740 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:15:31,450 [INFO] Epoch 11 | Train Loss: 0.4266 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.6087 | P: 0.4667 | R: 0.8750
+2026-06-14 12:15:41,158 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:18:00,289 [INFO] Epoch 12 | Train Loss: 0.4461 | Val Loss: 0.0000 | Acc: 0.5625 | F1: 0.6111 | P: 0.5500 | R: 0.6875
+2026-06-14 12:18:03,812 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:20:25,584 [INFO] Epoch 13 | Train Loss: 0.3733 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.6087 | P: 0.4667 | R: 0.8750
+2026-06-14 12:20:53,588 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:23:15,339 [INFO] Epoch 14 | Train Loss: 0.5418 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6512 | P: 0.5185 | R: 0.8750
+2026-06-14 12:23:43,103 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:26:00,268 [INFO] Epoch 15 | Train Loss: 0.3768 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.6364 | P: 0.5000 | R: 0.8750
+2026-06-14 12:26:53,284 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:29:14,422 [INFO] Epoch 16 | Train Loss: 0.3792 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 12:29:42,279 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:32:01,240 [INFO] Epoch 17 | Train Loss: 0.2835 | Val Loss: 0.0000 | Acc: 0.4688 | F1: 0.4516 | P: 0.4667 | R: 0.4375
+2026-06-14 12:32:29,024 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:34:53,763 [INFO] Epoch 18 | Train Loss: 0.2900 | Val Loss: 0.0000 | Acc: 0.3750 | F1: 0.1667 | P: 0.2500 | R: 0.1250
+2026-06-14 12:35:42,561 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:38:02,986 [INFO] Epoch 19 | Train Loss: 0.3313 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.3077 | P: 0.4000 | R: 0.2500
+2026-06-14 12:38:30,735 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:40:59,960 [INFO] Epoch 20 | Train Loss: 0.3002 | Val Loss: 0.0000 | Acc: 0.3438 | F1: 0.0870 | P: 0.1429 | R: 0.0625
+2026-06-14 12:41:28,433 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:43:52,110 [INFO] Epoch 21 | Train Loss: 0.2244 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 12:44:25,652 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:46:47,421 [INFO] Epoch 22 | Train Loss: 0.2973 | Val Loss: 0.0000 | Acc: 0.3750 | F1: 0.1667 | P: 0.2500 | R: 0.1250
+2026-06-14 12:47:09,679 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:49:26,717 [INFO] Epoch 23 | Train Loss: 0.3418 | Val Loss: 0.0000 | Acc: 0.5938 | F1: 0.6667 | P: 0.5652 | R: 0.8125
+2026-06-14 12:49:35,176 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:51:53,333 [INFO] Epoch 24 | Train Loss: 0.3220 | Val Loss: 0.0000 | Acc: 0.3750 | F1: 0.1667 | P: 0.2500 | R: 0.1250
+2026-06-14 12:51:56,979 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:54:21,832 [INFO] Epoch 25 | Train Loss: 0.3204 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 12:54:50,019 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 12:57:09,774 [INFO] Epoch 26 | Train Loss: 0.2464 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 12:58:02,810 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:00:20,880 [INFO] Epoch 27 | Train Loss: 0.2754 | Val Loss: 0.0000 | Acc: 0.3750 | F1: 0.1667 | P: 0.2500 | R: 0.1250
+2026-06-14 13:00:48,810 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:03:12,298 [INFO] Epoch 28 | Train Loss: 0.2158 | Val Loss: 0.0000 | Acc: 0.4688 | F1: 0.4516 | P: 0.4667 | R: 0.4375
+2026-06-14 13:04:06,066 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:06:37,054 [INFO] Epoch 29 | Train Loss: 0.2128 | Val Loss: 0.0000 | Acc: 0.3438 | F1: 0.0870 | P: 0.1429 | R: 0.0625
+2026-06-14 13:07:05,535 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:09:27,268 [INFO] Epoch 30 | Train Loss: 0.2868 | Val Loss: 0.0000 | Acc: 0.5625 | F1: 0.6500 | P: 0.5417 | R: 0.8125
+2026-06-14 13:10:20,706 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:12:39,098 [INFO] Epoch 31 | Train Loss: 0.2856 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6667 | P: 0.5172 | R: 0.9375
+2026-06-14 13:13:07,097 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:15:28,318 [INFO] Epoch 32 | Train Loss: 0.2789 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 13:15:56,666 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:18:19,043 [INFO] Epoch 33 | Train Loss: 0.2066 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 13:18:49,537 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:21:07,371 [INFO] Epoch 34 | Train Loss: 0.2439 | Val Loss: 0.0000 | Acc: 0.5312 | F1: 0.6809 | P: 0.5161 | R: 1.0000
+2026-06-14 13:21:30,824 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:23:50,236 [INFO] Epoch 35 | Train Loss: 0.2393 | Val Loss: 0.0000 | Acc: 0.3125 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 13:24:00,915 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:26:16,408 [INFO] Epoch 36 | Train Loss: 0.2245 | Val Loss: 0.0000 | Acc: 0.3438 | F1: 0.0870 | P: 0.1429 | R: 0.0625
+2026-06-14 13:26:19,959 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:28:44,765 [INFO] Epoch 37 | Train Loss: 0.1588 | Val Loss: 0.0000 | Acc: 0.4062 | F1: 0.2400 | P: 0.3333 | R: 0.1875
+2026-06-14 13:28:48,269 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:31:05,801 [INFO] Epoch 38 | Train Loss: 0.1651 | Val Loss: 0.0000 | Acc: 0.3438 | F1: 0.0870 | P: 0.1429 | R: 0.0625
+2026-06-14 13:31:59,912 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:34:22,758 [INFO] Epoch 39 | Train Loss: 0.2754 | Val Loss: 0.0000 | Acc: 0.6562 | F1: 0.7442 | P: 0.5926 | R: 1.0000
+2026-06-14 13:34:22,949 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj1_split1.0_2026-06-14_11-43-15
+2026-06-14 13:34:50,805 [INFO] Saved last model to Data/models/exp-A_videomae_subj1_split1.0/model_last.pth
+2026-06-14 13:35:18,527 [INFO] Saved new best model to Data/models/exp-A_videomae_subj1_split1.0/model_best.pth
+2026-06-14 13:35:18,527 [INFO] Finished Subj 1 with Best F1: 0.7442
+2026-06-14 13:35:18,527 [INFO] Initialized Experiment Logger for: exp-A_videomae_subj2_split1.0
+2026-06-14 13:35:18,528 [INFO] Hyperparameters saved to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18/hyperparams.json
+2026-06-14 13:35:18,528 [INFO] --- Fold for Test Subject 2 ---
+2026-06-14 13:35:19,008 [INFO] Freezing backbone for 5 epochs.
+2026-06-14 13:37:40,196 [INFO] Epoch 0 | Train Loss: 0.7087 | Val Loss: 0.0000 | Acc: 0.5417 | F1: 0.2143 | P: 1.0000 | R: 0.1200
+2026-06-14 13:37:40,376 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 13:37:41,555 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:38:17,964 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 13:40:37,197 [INFO] Epoch 1 | Train Loss: 0.6762 | Val Loss: 0.0000 | Acc: 0.5417 | F1: 0.2143 | P: 1.0000 | R: 0.1200
+2026-06-14 13:40:37,380 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 13:40:38,580 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:40:39,724 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 13:42:58,832 [INFO] Epoch 2 | Train Loss: 0.6699 | Val Loss: 0.0000 | Acc: 0.5417 | F1: 0.2143 | P: 1.0000 | R: 0.1200
+2026-06-14 13:42:59,027 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 13:43:24,667 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:43:25,856 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 13:45:41,232 [INFO] Epoch 3 | Train Loss: 0.6915 | Val Loss: 0.0000 | Acc: 0.5417 | F1: 0.2143 | P: 1.0000 | R: 0.1200
+2026-06-14 13:45:41,416 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 13:45:42,609 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:46:08,124 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 13:48:29,063 [INFO] Epoch 4 | Train Loss: 0.6432 | Val Loss: 0.0000 | Acc: 0.5000 | F1: 0.0769 | P: 1.0000 | R: 0.0400
+2026-06-14 13:48:30,369 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:48:30,370 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-14 13:50:49,906 [INFO] Epoch 5 | Train Loss: 0.7688 | Val Loss: 0.0000 | Acc: 0.3958 | F1: 0.5672 | P: 0.4524 | R: 0.7600
+2026-06-14 13:50:50,097 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 13:51:43,831 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:52:11,588 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 13:54:32,414 [INFO] Epoch 6 | Train Loss: 0.6867 | Val Loss: 0.0000 | Acc: 0.4375 | F1: 0.4706 | P: 0.4615 | R: 0.4800
+2026-06-14 13:55:13,694 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 13:57:33,884 [INFO] Epoch 7 | Train Loss: 0.6590 | Val Loss: 0.0000 | Acc: 0.6458 | F1: 0.5405 | P: 0.8333 | R: 0.4000
+2026-06-14 13:57:58,917 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:00:20,323 [INFO] Epoch 8 | Train Loss: 0.6521 | Val Loss: 0.0000 | Acc: 0.6250 | F1: 0.4375 | P: 1.0000 | R: 0.2800
+2026-06-14 14:00:40,561 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:02:59,263 [INFO] Epoch 9 | Train Loss: 0.6408 | Val Loss: 0.0000 | Acc: 0.6042 | F1: 0.5366 | P: 0.6875 | R: 0.4400
+2026-06-14 14:03:05,460 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:05:34,327 [INFO] Epoch 10 | Train Loss: 0.6025 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.5294 | P: 1.0000 | R: 0.3600
+2026-06-14 14:05:37,850 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:07:54,214 [INFO] Epoch 11 | Train Loss: 0.5324 | Val Loss: 0.0000 | Acc: 0.6458 | F1: 0.6222 | P: 0.7000 | R: 0.5600
+2026-06-14 14:07:54,403 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 14:08:22,121 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:09:15,074 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 14:11:38,582 [INFO] Epoch 12 | Train Loss: 0.5825 | Val Loss: 0.0000 | Acc: 0.5417 | F1: 0.2143 | P: 1.0000 | R: 0.1200
+2026-06-14 14:12:06,574 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:14:26,073 [INFO] Epoch 13 | Train Loss: 0.5184 | Val Loss: 0.0000 | Acc: 0.7292 | F1: 0.6829 | P: 0.8750 | R: 0.5600
+2026-06-14 14:14:26,267 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 14:14:54,039 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:15:47,625 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 14:18:04,188 [INFO] Epoch 14 | Train Loss: 0.4286 | Val Loss: 0.0000 | Acc: 0.6875 | F1: 0.5714 | P: 1.0000 | R: 0.4000
+2026-06-14 14:18:57,009 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:21:27,177 [INFO] Epoch 15 | Train Loss: 0.4171 | Val Loss: 0.0000 | Acc: 0.6042 | F1: 0.3871 | P: 1.0000 | R: 0.2400
+2026-06-14 14:21:54,980 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:24:16,151 [INFO] Epoch 16 | Train Loss: 0.3929 | Val Loss: 0.0000 | Acc: 0.4792 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-14 14:24:52,793 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:27:15,616 [INFO] Epoch 17 | Train Loss: 0.3628 | Val Loss: 0.0000 | Acc: 0.6250 | F1: 0.6538 | P: 0.6296 | R: 0.6800
+2026-06-14 14:27:30,825 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:29:55,294 [INFO] Epoch 18 | Train Loss: 0.3274 | Val Loss: 0.0000 | Acc: 0.7292 | F1: 0.7451 | P: 0.7308 | R: 0.7600
+2026-06-14 14:29:55,497 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 14:30:12,150 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:30:26,913 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 14:32:49,092 [INFO] Epoch 19 | Train Loss: 0.3298 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.6111 | P: 1.0000 | R: 0.4400
+2026-06-14 14:33:16,908 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:35:38,158 [INFO] Epoch 20 | Train Loss: 0.2837 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.6667 | P: 0.6957 | R: 0.6400
+2026-06-14 14:36:31,065 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:38:52,907 [INFO] Epoch 21 | Train Loss: 0.3653 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.7500 | P: 0.6774 | R: 0.8400
+2026-06-14 14:38:53,103 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 14:39:20,764 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:40:13,892 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 14:42:33,182 [INFO] Epoch 22 | Train Loss: 0.3817 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.7308 | P: 0.7037 | R: 0.7600
+2026-06-14 14:43:00,969 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:45:22,432 [INFO] Epoch 23 | Train Loss: 0.4110 | Val Loss: 0.0000 | Acc: 0.7500 | F1: 0.7000 | P: 0.9333 | R: 0.5600
+2026-06-14 14:46:16,142 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:48:43,019 [INFO] Epoch 24 | Train Loss: 0.3305 | Val Loss: 0.0000 | Acc: 0.6875 | F1: 0.5946 | P: 0.9167 | R: 0.4400
+2026-06-14 14:49:11,456 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:51:40,812 [INFO] Epoch 25 | Train Loss: 0.2711 | Val Loss: 0.0000 | Acc: 0.6250 | F1: 0.5909 | P: 0.6842 | R: 0.5200
+2026-06-14 14:52:09,366 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:54:32,788 [INFO] Epoch 26 | Train Loss: 0.2451 | Val Loss: 0.0000 | Acc: 0.6458 | F1: 0.4848 | P: 1.0000 | R: 0.3200
+2026-06-14 14:55:10,186 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 14:57:33,780 [INFO] Epoch 27 | Train Loss: 0.1879 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.6667 | P: 0.6957 | R: 0.6400
+2026-06-14 14:58:00,490 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:00:21,879 [INFO] Epoch 28 | Train Loss: 0.1613 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.7407 | P: 0.6897 | R: 0.8000
+2026-06-14 15:00:37,628 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:02:57,548 [INFO] Epoch 29 | Train Loss: 0.2498 | Val Loss: 0.0000 | Acc: 0.7083 | F1: 0.6316 | P: 0.9231 | R: 0.4800
+2026-06-14 15:03:02,913 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:05:25,181 [INFO] Epoch 30 | Train Loss: 0.3257 | Val Loss: 0.0000 | Acc: 0.6458 | F1: 0.4848 | P: 1.0000 | R: 0.3200
+2026-06-14 15:05:28,817 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:07:51,634 [INFO] Epoch 31 | Train Loss: 0.2267 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.6000 | P: 0.8000 | R: 0.4800
+2026-06-14 15:08:45,455 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:11:04,724 [INFO] Epoch 32 | Train Loss: 0.1496 | Val Loss: 0.0000 | Acc: 0.7500 | F1: 0.7692 | P: 0.7407 | R: 0.8000
+2026-06-14 15:11:04,927 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj2_split1.0_2026-06-14_13-35-18
+2026-06-14 15:11:33,317 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:12:00,951 [INFO] Saved new best model to Data/models/exp-A_videomae_subj2_split1.0/model_best.pth
+2026-06-14 15:14:27,665 [INFO] Epoch 33 | Train Loss: 0.1623 | Val Loss: 0.0000 | Acc: 0.7292 | F1: 0.6486 | P: 1.0000 | R: 0.4800
+2026-06-14 15:15:21,010 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:17:48,641 [INFO] Epoch 34 | Train Loss: 0.1213 | Val Loss: 0.0000 | Acc: 0.7292 | F1: 0.6977 | P: 0.8333 | R: 0.6000
+2026-06-14 15:18:16,548 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:20:36,022 [INFO] Epoch 35 | Train Loss: 0.0808 | Val Loss: 0.0000 | Acc: 0.7292 | F1: 0.6486 | P: 1.0000 | R: 0.4800
+2026-06-14 15:21:04,062 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:23:24,762 [INFO] Epoch 36 | Train Loss: 0.1829 | Val Loss: 0.0000 | Acc: 0.7292 | F1: 0.6486 | P: 1.0000 | R: 0.4800
+2026-06-14 15:24:16,142 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:26:38,951 [INFO] Epoch 37 | Train Loss: 0.1422 | Val Loss: 0.0000 | Acc: 0.6667 | F1: 0.6923 | P: 0.6667 | R: 0.7200
+2026-06-14 15:27:07,517 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:29:26,537 [INFO] Epoch 38 | Train Loss: 0.2207 | Val Loss: 0.0000 | Acc: 0.6458 | F1: 0.5854 | P: 0.7500 | R: 0.4800
+2026-06-14 15:29:52,600 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:32:12,716 [INFO] Epoch 39 | Train Loss: 0.1235 | Val Loss: 0.0000 | Acc: 0.7500 | F1: 0.7000 | P: 0.9333 | R: 0.5600
+2026-06-14 15:32:29,378 [INFO] Saved last model to Data/models/exp-A_videomae_subj2_split1.0/model_last.pth
+2026-06-14 15:32:29,378 [INFO] Finished Subj 2 with Best F1: 0.7692
+2026-06-14 15:32:29,379 [INFO] Initialized Experiment Logger for: exp-A_videomae_subj3_split1.0
+2026-06-14 15:32:29,379 [INFO] Hyperparameters saved to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29/hyperparams.json
+2026-06-14 15:32:29,379 [INFO] --- Fold for Test Subject 3 ---
+2026-06-14 15:32:29,824 [INFO] Freezing backbone for 5 epochs.
+2026-06-14 15:34:44,713 [INFO] Epoch 0 | Train Loss: 0.7150 | Val Loss: 0.0000 | Acc: 0.5581 | F1: 0.6275 | P: 0.5333 | R: 0.7619
+2026-06-14 15:34:44,899 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 15:34:46,209 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:34:47,395 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 15:37:09,020 [INFO] Epoch 1 | Train Loss: 0.7175 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6190 | P: 0.6190 | R: 0.6190
+2026-06-14 15:37:23,515 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:39:45,994 [INFO] Epoch 2 | Train Loss: 0.6782 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6190 | P: 0.6190 | R: 0.6190
+2026-06-14 15:39:47,341 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:42:13,217 [INFO] Epoch 3 | Train Loss: 0.6500 | Val Loss: 0.0000 | Acc: 0.5116 | F1: 0.2222 | P: 0.5000 | R: 0.1429
+2026-06-14 15:42:14,579 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:44:37,835 [INFO] Epoch 4 | Train Loss: 0.6948 | Val Loss: 0.0000 | Acc: 0.4884 | F1: 0.1538 | P: 0.4000 | R: 0.0952
+2026-06-14 15:45:10,331 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:45:10,332 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-14 15:47:32,578 [INFO] Epoch 5 | Train Loss: 0.7490 | Val Loss: 0.0000 | Acc: 0.4651 | F1: 0.0800 | P: 0.2500 | R: 0.0476
+2026-06-14 15:47:58,126 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:50:24,957 [INFO] Epoch 6 | Train Loss: 0.6461 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.6939 | P: 0.6071 | R: 0.8095
+2026-06-14 15:50:25,152 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 15:50:38,054 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:50:56,183 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 15:53:15,533 [INFO] Epoch 7 | Train Loss: 0.5456 | Val Loss: 0.0000 | Acc: 0.6744 | F1: 0.6957 | P: 0.6400 | R: 0.7619
+2026-06-14 15:53:15,731 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 15:53:19,302 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:53:47,230 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 15:56:06,107 [INFO] Epoch 8 | Train Loss: 0.5338 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7059 | P: 0.6000 | R: 0.8571
+2026-06-14 15:56:06,302 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 15:57:00,233 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 15:57:28,086 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 15:59:43,932 [INFO] Epoch 9 | Train Loss: 0.5323 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6800 | P: 0.5862 | R: 0.8095
+2026-06-14 16:00:36,982 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:02:56,018 [INFO] Epoch 10 | Train Loss: 0.4894 | Val Loss: 0.0000 | Acc: 0.5116 | F1: 0.6182 | P: 0.5000 | R: 0.8095
+2026-06-14 16:03:49,818 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:06:08,086 [INFO] Epoch 11 | Train Loss: 0.5104 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7170 | P: 0.5938 | R: 0.9048
+2026-06-14 16:06:08,276 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 16:06:36,049 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:07:22,234 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 16:09:37,811 [INFO] Epoch 12 | Train Loss: 0.4324 | Val Loss: 0.0000 | Acc: 0.5349 | F1: 0.6429 | P: 0.5143 | R: 0.8571
+2026-06-14 16:10:05,892 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:12:22,367 [INFO] Epoch 13 | Train Loss: 0.4182 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7170 | P: 0.5938 | R: 0.9048
+2026-06-14 16:12:22,571 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 16:12:41,201 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:13:19,796 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 16:15:37,890 [INFO] Epoch 14 | Train Loss: 0.4770 | Val Loss: 0.0000 | Acc: 0.5581 | F1: 0.6667 | P: 0.5278 | R: 0.9048
+2026-06-14 16:15:41,402 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:17:55,443 [INFO] Epoch 15 | Train Loss: 0.3714 | Val Loss: 0.0000 | Acc: 0.5581 | F1: 0.6545 | P: 0.5294 | R: 0.8571
+2026-06-14 16:18:49,547 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:21:04,842 [INFO] Epoch 16 | Train Loss: 0.3879 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6667 | P: 0.5926 | R: 0.7619
+2026-06-14 16:21:32,642 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:23:50,889 [INFO] Epoch 17 | Train Loss: 0.4150 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7059 | P: 0.6000 | R: 0.8571
+2026-06-14 16:24:18,732 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:26:39,033 [INFO] Epoch 18 | Train Loss: 0.3451 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6792 | P: 0.5625 | R: 0.8571
+2026-06-14 16:27:32,213 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:29:44,736 [INFO] Epoch 19 | Train Loss: 0.3077 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.6538 | P: 0.5484 | R: 0.8095
+2026-06-14 16:30:12,475 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:32:29,770 [INFO] Epoch 20 | Train Loss: 0.2500 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.7037 | P: 0.5758 | R: 0.9048
+2026-06-14 16:33:18,813 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:35:37,664 [INFO] Epoch 21 | Train Loss: 0.2272 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6792 | P: 0.5625 | R: 0.8571
+2026-06-14 16:36:05,585 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:38:17,963 [INFO] Epoch 22 | Train Loss: 0.2060 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.7037 | P: 0.5758 | R: 0.9048
+2026-06-14 16:38:41,164 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:40:58,792 [INFO] Epoch 23 | Train Loss: 0.1643 | Val Loss: 0.0000 | Acc: 0.5349 | F1: 0.6429 | P: 0.5143 | R: 0.8571
+2026-06-14 16:41:08,601 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:43:25,738 [INFO] Epoch 24 | Train Loss: 0.3218 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7170 | P: 0.5938 | R: 0.9048
+2026-06-14 16:43:25,937 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 16:43:29,348 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:43:56,916 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 16:46:17,018 [INFO] Epoch 25 | Train Loss: 0.2333 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.7000 | P: 0.5385 | R: 1.0000
+2026-06-14 16:46:44,800 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:48:58,885 [INFO] Epoch 26 | Train Loss: 0.3170 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6792 | P: 0.5625 | R: 0.8571
+2026-06-14 16:49:52,187 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:52:05,899 [INFO] Epoch 27 | Train Loss: 0.2816 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6667 | P: 0.5667 | R: 0.8095
+2026-06-14 16:52:33,661 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:54:50,216 [INFO] Epoch 28 | Train Loss: 0.3054 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.7000 | P: 0.5385 | R: 1.0000
+2026-06-14 16:55:17,930 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:57:37,839 [INFO] Epoch 29 | Train Loss: 0.1973 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7170 | P: 0.5938 | R: 0.9048
+2026-06-14 16:57:38,036 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 16:58:05,710 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 16:58:46,990 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 17:01:07,146 [INFO] Epoch 30 | Train Loss: 0.1874 | Val Loss: 0.0000 | Acc: 0.6512 | F1: 0.7170 | P: 0.5938 | R: 0.9048
+2026-06-14 17:01:07,343 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 17:01:31,116 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:01:45,700 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 17:04:01,138 [INFO] Epoch 31 | Train Loss: 0.2245 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6923 | P: 0.5806 | R: 0.8571
+2026-06-14 17:04:04,647 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:06:17,691 [INFO] Epoch 32 | Train Loss: 0.3007 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.6923 | P: 0.5806 | R: 0.8571
+2026-06-14 17:07:11,145 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:09:26,312 [INFO] Epoch 33 | Train Loss: 0.2605 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.7037 | P: 0.5758 | R: 0.9048
+2026-06-14 17:09:54,165 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:12:08,933 [INFO] Epoch 34 | Train Loss: 0.1815 | Val Loss: 0.0000 | Acc: 0.6279 | F1: 0.7037 | P: 0.5758 | R: 0.9048
+2026-06-14 17:12:36,762 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:14:52,223 [INFO] Epoch 35 | Train Loss: 0.1250 | Val Loss: 0.0000 | Acc: 0.6047 | F1: 0.6792 | P: 0.5625 | R: 0.8571
+2026-06-14 17:15:45,308 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:18:01,892 [INFO] Epoch 36 | Train Loss: 0.2696 | Val Loss: 0.0000 | Acc: 0.6977 | F1: 0.7451 | P: 0.6333 | R: 0.9048
+2026-06-14 17:18:02,093 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj3_split1.0_2026-06-14_15-32-29
+2026-06-14 17:18:30,334 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:18:57,932 [INFO] Saved new best model to Data/models/exp-A_videomae_subj3_split1.0/model_best.pth
+2026-06-14 17:21:13,741 [INFO] Epoch 37 | Train Loss: 0.2586 | Val Loss: 0.0000 | Acc: 0.6744 | F1: 0.7200 | P: 0.6207 | R: 0.8571
+2026-06-14 17:21:52,246 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:24:09,099 [INFO] Epoch 38 | Train Loss: 0.1840 | Val Loss: 0.0000 | Acc: 0.5814 | F1: 0.7000 | P: 0.5385 | R: 1.0000
+2026-06-14 17:24:33,989 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:26:49,816 [INFO] Epoch 39 | Train Loss: 0.2436 | Val Loss: 0.0000 | Acc: 0.6744 | F1: 0.7083 | P: 0.6296 | R: 0.8095
+2026-06-14 17:27:01,820 [INFO] Saved last model to Data/models/exp-A_videomae_subj3_split1.0/model_last.pth
+2026-06-14 17:27:01,820 [INFO] Finished Subj 3 with Best F1: 0.7451
+2026-06-14 17:27:01,820 [INFO] Initialized Experiment Logger for: exp-A_videomae_subj4_split1.0
+2026-06-14 17:27:01,821 [INFO] Hyperparameters saved to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01/hyperparams.json
+2026-06-14 17:27:01,821 [INFO] --- Fold for Test Subject 4 ---
+2026-06-14 17:27:02,263 [INFO] Freezing backbone for 5 epochs.
+2026-06-14 17:29:25,587 [INFO] Epoch 0 | Train Loss: 0.7236 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:29:25,816 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:29:27,128 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:29:28,544 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:31:47,579 [INFO] Epoch 1 | Train Loss: 0.7418 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:31:47,775 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:32:06,736 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:32:40,724 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:34:56,707 [INFO] Epoch 2 | Train Loss: 0.6595 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:34:56,910 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:34:58,201 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:35:13,622 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:37:31,820 [INFO] Epoch 3 | Train Loss: 0.7021 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:37:32,021 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:37:33,231 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:37:34,388 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:39:52,018 [INFO] Epoch 4 | Train Loss: 0.6966 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:39:52,227 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:40:03,389 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:40:19,005 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:40:19,005 [INFO] Unfreezing backbone for end-to-end training.
+2026-06-14 17:42:40,193 [INFO] Epoch 5 | Train Loss: 0.8222 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:42:40,384 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:43:27,967 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:45:49,568 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:48:07,192 [INFO] Epoch 6 | Train Loss: 0.6782 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:48:07,379 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 17:50:20,510 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:52:43,337 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 17:55:00,064 [INFO] Epoch 7 | Train Loss: 0.5672 | Val Loss: 0.0000 | Acc: 0.2973 | F1: 0.4348 | P: 0.3448 | R: 0.5882
+2026-06-14 17:57:19,450 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 17:59:34,495 [INFO] Epoch 8 | Train Loss: 0.5443 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 17:59:34,689 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:01:47,496 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:04:08,444 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:06:28,931 [INFO] Epoch 9 | Train Loss: 0.5633 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:06:29,113 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:07:53,134 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:08:21,341 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:10:38,661 [INFO] Epoch 10 | Train Loss: 0.5802 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:10:38,853 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:11:31,795 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:11:59,515 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:14:18,294 [INFO] Epoch 11 | Train Loss: 0.5446 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:14:18,477 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:14:46,196 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:15:25,832 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:17:43,131 [INFO] Epoch 12 | Train Loss: 0.4759 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:17:43,316 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:18:11,190 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:18:25,595 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:20:48,180 [INFO] Epoch 13 | Train Loss: 0.4273 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:20:48,374 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:20:52,131 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:21:44,886 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:24:01,057 [INFO] Epoch 14 | Train Loss: 0.3816 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:24:01,246 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:24:29,059 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:24:56,732 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:27:15,139 [INFO] Epoch 15 | Train Loss: 0.4426 | Val Loss: 0.0000 | Acc: 0.2703 | F1: 0.3721 | P: 0.3077 | R: 0.4706
+2026-06-14 18:28:07,927 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:30:30,301 [INFO] Epoch 16 | Train Loss: 0.4515 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:30:30,490 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:30:58,339 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:31:26,035 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:33:41,251 [INFO] Epoch 17 | Train Loss: 0.4272 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:33:41,440 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:34:34,562 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:35:02,901 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:37:20,217 [INFO] Epoch 18 | Train Loss: 0.4314 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:37:20,416 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:37:48,323 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:38:05,429 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:40:25,131 [INFO] Epoch 19 | Train Loss: 0.4492 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:40:25,321 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:40:28,729 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:40:56,140 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:43:15,740 [INFO] Epoch 20 | Train Loss: 0.4071 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:43:15,941 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:43:43,681 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:44:36,251 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:46:57,392 [INFO] Epoch 21 | Train Loss: 0.4287 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:46:57,577 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:47:26,469 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:47:54,183 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:50:08,743 [INFO] Epoch 22 | Train Loss: 0.4040 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:50:08,926 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:50:36,759 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:51:29,326 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:53:45,147 [INFO] Epoch 23 | Train Loss: 0.2978 | Val Loss: 0.0000 | Acc: 0.4054 | F1: 0.5600 | P: 0.4242 | R: 0.8235
+2026-06-14 18:54:13,230 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:56:29,660 [INFO] Epoch 24 | Train Loss: 0.3833 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:56:29,846 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:56:58,223 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 18:57:23,447 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 18:59:40,817 [INFO] Epoch 25 | Train Loss: 0.3877 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 18:59:41,003 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 18:59:54,204 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:00:11,642 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:02:26,489 [INFO] Epoch 26 | Train Loss: 0.3530 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:02:26,683 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:02:30,219 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:03:23,084 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:05:41,102 [INFO] Epoch 27 | Train Loss: 0.2842 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:05:41,290 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:06:09,145 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:06:37,528 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:08:56,600 [INFO] Epoch 28 | Train Loss: 0.2332 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:08:56,793 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:09:50,078 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:10:17,714 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:12:41,436 [INFO] Epoch 29 | Train Loss: 0.2994 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:12:41,629 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:13:34,538 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:14:02,426 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:16:25,057 [INFO] Epoch 30 | Train Loss: 0.2356 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:16:25,249 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:16:52,953 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:17:07,977 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:19:31,222 [INFO] Epoch 31 | Train Loss: 0.2810 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:19:31,415 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:19:41,355 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:20:02,244 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:22:24,006 [INFO] Epoch 32 | Train Loss: 0.3819 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:22:24,204 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:22:51,986 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:23:44,886 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:26:01,941 [INFO] Epoch 33 | Train Loss: 0.3908 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:26:02,139 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:26:30,170 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:26:58,555 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:29:16,671 [INFO] Epoch 34 | Train Loss: 0.2733 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:29:16,864 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:30:09,877 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:30:37,578 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:32:59,352 [INFO] Epoch 35 | Train Loss: 0.2923 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:32:59,552 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:33:52,258 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:34:20,004 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:36:37,982 [INFO] Epoch 36 | Train Loss: 0.3219 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:36:38,174 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:37:31,816 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:37:59,584 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:40:19,438 [INFO] Epoch 37 | Train Loss: 0.3043 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:40:19,629 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:41:07,221 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:41:39,892 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:44:02,317 [INFO] Epoch 38 | Train Loss: 0.4373 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:44:02,518 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:44:26,185 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:44:33,820 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:46:49,312 [INFO] Epoch 39 | Train Loss: 0.2477 | Val Loss: 0.0000 | Acc: 0.4595 | F1: 0.6296 | P: 0.4595 | R: 1.0000
+2026-06-14 19:46:49,507 [INFO] Saved confusion matrix and qualitative samples to Results/exp-A_videomae_subj4_split1.0_2026-06-14_17-27-01
+2026-06-14 19:46:52,903 [INFO] Saved last model to Data/models/exp-A_videomae_subj4_split1.0/model_last.pth
+2026-06-14 19:47:21,151 [INFO] Saved new best model to Data/models/exp-A_videomae_subj4_split1.0/model_best.pth
+2026-06-14 19:47:21,151 [INFO] Finished Subj 4 with Best F1: 0.6296
