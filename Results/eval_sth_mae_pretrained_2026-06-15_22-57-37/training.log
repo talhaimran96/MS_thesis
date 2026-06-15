@@ -1,0 +1,25 @@
+2026-06-15 22:57:37,703 [INFO] Initialized Experiment Logger for: eval_sth_mae_pretrained
+2026-06-15 22:57:38,726 [INFO] Loaded pretrained weights from Data/models/sth_mae_pretrain_0.75/model_best.pth
+2026-06-15 22:57:39,590 [INFO] Starting Fine-tuning Evaluation for sth_mae
+2026-06-15 22:57:44,501 [INFO] Epoch 0 | Train Loss: 0.7867 | Acc: 52.0000 | F1: 0.6842 | P: 0.5200 | R: 1.0000
+2026-06-15 22:57:49,225 [INFO] Epoch 1 | Train Loss: 0.7184 | Acc: 57.0000 | F1: 0.7261 | P: 0.5700 | R: 1.0000
+2026-06-15 22:57:53,977 [INFO] Epoch 2 | Train Loss: 0.7824 | Acc: 50.0000 | F1: 0.6667 | P: 0.5000 | R: 1.0000
+2026-06-15 22:57:58,751 [INFO] Epoch 3 | Train Loss: 1.0027 | Acc: 49.0000 | F1: 0.6047 | P: 0.4815 | R: 0.8125
+2026-06-15 22:58:03,550 [INFO] Epoch 4 | Train Loss: 0.7543 | Acc: 60.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:08,375 [INFO] Epoch 5 | Train Loss: 0.6933 | Acc: 55.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:13,239 [INFO] Epoch 6 | Train Loss: 0.6963 | Acc: 52.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:18,192 [INFO] Epoch 7 | Train Loss: 0.6948 | Acc: 53.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:23,047 [INFO] Epoch 8 | Train Loss: 0.6928 | Acc: 53.0000 | F1: 0.5607 | P: 0.5556 | R: 0.5660
+2026-06-15 22:58:27,929 [INFO] Epoch 9 | Train Loss: 0.7057 | Acc: 52.0000 | F1: 0.6842 | P: 0.5200 | R: 1.0000
+2026-06-15 22:58:32,821 [INFO] Epoch 10 | Train Loss: 0.6948 | Acc: 46.0000 | F1: 0.6087 | P: 0.4667 | R: 0.8750
+2026-06-15 22:58:37,759 [INFO] Epoch 11 | Train Loss: 0.6952 | Acc: 49.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:42,678 [INFO] Epoch 12 | Train Loss: 0.6960 | Acc: 58.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:47,619 [INFO] Epoch 13 | Train Loss: 0.7007 | Acc: 48.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:58:52,557 [INFO] Epoch 14 | Train Loss: 0.6960 | Acc: 48.0000 | F1: 0.6486 | P: 0.4800 | R: 1.0000
+2026-06-15 22:58:57,529 [INFO] Epoch 15 | Train Loss: 0.6966 | Acc: 49.0000 | F1: 0.3200 | P: 0.4138 | R: 0.2609
+2026-06-15 22:59:02,525 [INFO] Epoch 16 | Train Loss: 0.6930 | Acc: 52.0000 | F1: 0.0000 | P: 0.0000 | R: 0.0000
+2026-06-15 22:59:07,525 [INFO] Epoch 17 | Train Loss: 0.6990 | Acc: 41.0000 | F1: 0.2716 | P: 0.4400 | R: 0.1964
+2026-06-15 22:59:12,485 [INFO] Epoch 18 | Train Loss: 0.6998 | Acc: 44.0000 | F1: 0.6111 | P: 0.4400 | R: 1.0000
+2026-06-15 22:59:17,433 [INFO] Epoch 19 | Train Loss: 0.7002 | Acc: 44.0000 | F1: 0.0968 | P: 0.4286 | R: 0.0545
+2026-06-15 22:59:17,640 [INFO] Saved confusion matrix and qualitative samples to Results/eval_sth_mae_pretrained_2026-06-15_22-57-37
+2026-06-15 22:59:17,640 [INFO] Evaluation complete.

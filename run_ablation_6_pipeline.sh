@@ -4,10 +4,10 @@
 set -e # Exit on error
 
 echo "=== 1. Pretraining STH-MAE with mask_ratio=0.5 ==="
-python Experiments/pretrain_sth_mae.py --mask_ratio 0.5 --epochs 100
+# python Experiments/pretrain_sth_mae.py --mask_ratio 0.5 --epochs 100
 
 echo "=== 2. Pretraining STH-MAE with mask_ratio=0.75 ==="
-python Experiments/pretrain_sth_mae.py --mask_ratio 0.75 --epochs 100
+# python Experiments/pretrain_sth_mae.py --mask_ratio 0.75 --epochs 100
 
 echo "=== 3. Copying pretrained weights to models/ directory ==="
 mkdir -p models
