@@ -23,7 +23,7 @@ def main():
     parser.add_argument('--resume', type=str, default='', help='Path to checkpoint to resume from')
     args = parser.parse_args()
     
-    logger = ExperimentLogger(experiment_name="sth_mae_pretrain")
+    logger = ExperimentLogger(experiment_name=f"sth_mae_pretrain_{args.mask_ratio}")
     logger.log_hyperparams(vars(args))
     
     dataset = NTUSkeletonDataset(args.data_dir, mode='heatmap', max_frames=32, target_shape=(32, 32, 32))
