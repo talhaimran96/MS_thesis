@@ -20,13 +20,6 @@ The goal of this branch is to implement and evaluate **Experiment B: The Robustn
    pip install -r requirements.txt
    ```
 
-## Directory Structure
-- `Data/`: Contains `raw`, `processed`, and `models` checkpoints.
-- `src/`: Core Python modules for data parsing, heatmaps, and architectures.
-- `Experiments/`: Training and evaluation scripts.
-- `Planning/`: Master experiment plans and literature.
-- `Reports/`: Daily notes and generated results.
-- `Results/`: Logged metrics, loss graphs, and hyperparameter configs.
 
 ## Execution Guide
 
