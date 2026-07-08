@@ -31,3 +31,13 @@ This branch implements **Experiment B**, testing the robustness and privacy pres
 - Spatial-Temporal Graph Convolutional Networks (ST-GCN) on sparse 3D joints acting as a contrastive learning baseline.
 - Skeleton pose detection processing components used for fine-tuning fall classifiers.
 - Pretraining tasks that compare generative heatmap reconstruction against contrastive learning baselines to find the optimal balance of privacy and noise robustness.
+
+## Dataset Structure
+
+The raw datasets utilized in both streams are located under `Data/raw/`. 
+
+- **GMDCSA-24**: The primary downstream dataset for fine-tuning. Contains "staged" human fall and ADL (Activities of Daily Living) `.csv` files and `.mp4` videos.
+- **UP-Fall**: Used as a baseline staging dataset. Contains multi-camera RGB clips and sensor data.
+- **Kinetics-400**: Large-scale action recognition video dataset used exclusively for pretraining the Vision Transformer in Experiment A (RGB Stream).
+- **NTU RGB+D (120)**: Large-scale skeleton dataset used exclusively for pretraining the STH-MAE and ST-GCN models in Experiment B (Skeleton Stream).
+- **OOPS-Fall**: A quarantined "wild" dataset containing unpredictable real-world accident videos used for testing domain generalization.
