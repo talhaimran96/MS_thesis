@@ -6,3 +6,5 @@ matplotlib
 tqdm
 scipy
 scikit-learn
+mediapipe
+opencv-python

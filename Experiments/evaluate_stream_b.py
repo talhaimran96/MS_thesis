@@ -14,29 +14,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.models.st_gcn import ST_GCN
 from src.models.sth_mae import STH_MAE
 from src.utils.logger import ExperimentLogger
+from src.data.gmdcsa_dataset import GMDCSASkeletonDataset
 
-# A dummy dataset for demonstration of downstream fine-tuning (Fall vs ADL)
-class DummyFallDataset(torch.utils.data.Dataset):
-    def __init__(self, mode='heatmap', num_samples=100):
-        self.mode = mode
-        self.num_samples = num_samples
-        
-    def __len__(self):
-        return self.num_samples
-        
-    def _skeleton_pose_detection_processing(self):
-        # Simulated skeleton pose detection processing
-        if self.mode == 'heatmap':
-            # Simulated 3D heatmap generated from skeleton pose detection
-            return torch.rand(1, 32, 32, 32)
-        else:
-            # Simulated Graph: (C, T, V, M) -> 3, 100, 25, 1 from skeleton pose detection
-            return torch.rand(3, 100, 25, 1)
-
-    def __getitem__(self, idx):
-        label = torch.randint(0, 2, (1,)).item() # 0 for ADL, 1 for Fall
-        data = self._skeleton_pose_detection_processing()
-        return data, label
+# Replaced DummyFallDataset with GMDCSASkeletonDataset
 
 class FallClassifier(nn.Module):
     def __init__(self, backbone, in_features, num_classes=2):
@@ -90,7 +70,8 @@ def main():
         
     model = FallClassifier(backbone, in_features).to(device)
     
-    dataset = DummyFallDataset(mode=mode)
+    data_dir = "Data/raw/GMDCSA24-A-Dataset-for-Human-Fall-Detection-in-Videos-master"
+    dataset = GMDCSASkeletonDataset(data_dir=data_dir, mode=mode)
     dataloader = DataLoader(dataset, batch_size=8, shuffle=True)
     
     optimizer = optim.Adam(model.parameters(), lr=1e-5)
