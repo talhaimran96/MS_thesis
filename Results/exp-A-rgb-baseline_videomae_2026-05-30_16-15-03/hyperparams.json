@@ -1,8 +1,0 @@
-{
-    "batch_size": 8,
-    "epochs": 30,
-    "lr": 0.00015,
-    "mask_ratio": 0.9,
-    "data_path": "Data/raw/kinetics400_5per/train",
-    "resume": ""
-}
