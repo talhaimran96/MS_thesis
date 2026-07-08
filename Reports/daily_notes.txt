@@ -1,6 +1,0 @@
-# Daily Notes
-
-## 2026-05-19
-- Switched to `experiments/exp-B-skeleton-ssl` branch to start Experiment B.
-- Cleaned up the repository of old code and artifacts to provide a fresh start for the Spatial-Temporal Heatmap Masked Autoencoder (STH-MAE) and contrastive ST-GCN experiments.
-- Re-initialized standard reporting files, logger, and project setup.
