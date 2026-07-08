@@ -93,3 +93,22 @@ bash Experiments/run_ablation_stream_a.sh
 ```bash
 python Experiments/test_stream_a.py --dataset oops_fall --weights Data/models/...
 ```
+
+## Results and Visualizations
+
+Here are some key visual results from our evaluation in Experiment A (RGB Stream):
+
+### Baseline 3D CNN Confusion Matrix
+![Baseline 3D CNN](figures/extdrive_expA_baseline_3dcnn_subj3_split0.5_cm.png)
+
+### VideoMAE Confusion Matrix
+![VideoMAE](figures/extdrive_expA_videomae_subj3_split0.5_cm.png)
+
+### Stream A Loss Comparison
+![Stream A Loss](figures/stream_a_loss_comparison.png)
+
+### 3D CNN Loss (100% Split)
+![3D CNN 100% Loss](figures/stream_a_3dcnn_100pct_loss.png)
+
+### VideoMAE Tube Masking
+![VideoMAE Masking](figures/fig_videomae_tube_masking.png)
