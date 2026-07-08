@@ -60,3 +60,19 @@ python Experiments/evaluate_stream_b.py --model_type gcn --pretrained_weights Da
 ```
 
 *Note: If you want to run direct supervised training from scratch (no SSL), simply pass a dummy/non-existent path to `--pretrained_weights`, and the script will automatically fallback to training the randomly initialized backbone from scratch.*
+
+## Results and Visualizations
+
+Here are some key visual results from our evaluation in Experiment B:
+
+### STH-MAE (Pretrained) Confusion Matrix
+![STH-MAE Pretrained](figures/branch_expB_eval_sth_mae_pretrained_cm.png)
+
+### GCN (Scratch) Confusion Matrix
+![GCN Scratch](figures/branch_expB_eval_gcn_scratch_cm.png)
+
+### Stream B Loss Comparison
+![Loss Comparison](figures/stream_b_loss_comparison.png)
+
+### SSL Pipeline Overview
+![SSL Pipeline](figures/fig_ssl_pipeline.png)
