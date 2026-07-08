@@ -24,13 +24,18 @@ class DummyFallDataset(torch.utils.data.Dataset):
     def __len__(self):
         return self.num_samples
         
+    def _skeleton_pose_detection_processing(self):
+        # Simulated skeleton pose detection processing
+        if self.mode == 'heatmap':
+            # Simulated 3D heatmap generated from skeleton pose detection
+            return torch.rand(1, 32, 32, 32)
+        else:
+            # Simulated Graph: (C, T, V, M) -> 3, 100, 25, 1 from skeleton pose detection
+            return torch.rand(3, 100, 25, 1)
+
     def __getitem__(self, idx):
         label = torch.randint(0, 2, (1,)).item() # 0 for ADL, 1 for Fall
-        if self.mode == 'heatmap':
-            data = torch.randn(1, 32, 32, 32)
-        else:
-            # Graph: (C, T, V, M) -> 3, 100, 25, 1
-            data = torch.randn(3, 100, 25, 1)
+        data = self._skeleton_pose_detection_processing()
         return data, label
 
 class FallClassifier(nn.Module):
