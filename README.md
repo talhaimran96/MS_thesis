@@ -17,7 +17,7 @@ This branch implements **Experiment A**, which focuses on evaluating RGB pixel-l
 - The VideoMAE V2 architecture utilizing Masked Video Reconstruction on unlabeled datasets (e.g., Kinetics-400).
 - Traditional supervised 3D CNN baselines.
 - Downstream fine-tuning on the GMDCSA-24 dataset to quantify the reduction in manually labeled data required when using generative SSL versus supervised approaches.
-- Analysis of data ablation, domain generalization (testing on OOPS-Fall), and masking ratios.
+- Analysis of data ablation, domain generalization, and masking ratios.
 
 ### 2. Skeleton SSL Stream (`experiments/exp-B-skeleton-ssl`)
 Switch to this branch:
